@@ -1,0 +1,36 @@
+# pip install -r requirements.txt -t .
+# python -m pip wheel SPARQLWrapper
+# python3 -m pip install --no-index --find-links=. SPARQLWrapper-2.0.0-py3-none-any.whl
+# https://roman.pt/posts/optimize-pip-install-with-wheels/
+# python -m pip wheel pandas
+# -> ls -a
+# boscp08@macOS-FVFDM39AQ05D-boscp08 nigel % ls -a | sort
+# numpy-1.24.1-cp310-cp310-macosx_11_0_arm64.whl
+# pandas-1.5.2-cp310-cp310-macosx_11_0_arm64.whl
+# python_dateutil-2.8.2-py2.py3-none-any.whl
+# pytz-2022.7-py2.py3-none-any.whl
+# six-1.16.0-py2.py3-none-any.whl
+
+flask
+# gunicorn
+rdflib
+pandas
+uuid
+requests
+pyyaml
+openpyxl
+datetime
+pathlib
+regex
+striprtf
+SPARQLWrapper
+psycopg2-binary
+requests_oauthlib
+lxml
+pyarrow
+psycopg
+duckdb
+yamlpath
+icecream
+flask_cors
+cyclonedx-bom
