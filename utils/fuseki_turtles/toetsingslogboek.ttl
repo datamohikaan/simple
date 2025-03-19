@@ -1,0 +1,964 @@
+@prefix kg:   <http://modellenbibliotheek.belastingdienst.nl/id/kennisgebied/> .
+@prefix kgr:  <http://modellenbibliotheek.belastingdienst.nl/def/kgr#> .
+@prefix mb:   <http://modellenbibliotheek.belastingdienst.nl/def/mb#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tk:   <http://modellenbibliotheek.belastingdienst.nl/def/tk#> .
+@prefix tlb:  <http://modellenbibliotheek.belastingdienst.nl/def/tlb#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:jira:SDGGD-179>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek SM VDA Semantisch Model" ;
+        mb:code           "SDGGD-179" ;
+        tlb:betreft       <urn:sm:vda-sm_1.0.0> ;
+        tlb:datumVerzoek  "2023-05-17"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-179> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-9>  a     tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsing door modelautoriteit voor EWLS" ;
+        mb:code           "SDGGD-9" ;
+        tlb:betreft       <urn:sm:ib_1.0.0> , <urn:sm:fmr_1.0.0> , <urn:sm:fir_1.0.0> ;
+        tlb:datumVerzoek  "2021-03-03"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-9> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-178>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek tot publicatie van Kennismodellen KDG VDA Contexten & Attribuutdomeinen" ;
+        mb:code           "SDGGD-178" ;
+        tlb:betreft       <urn:sm:vda-cad_1.0.0> , <urn:lgd:vda-cad_1.0.1> ;
+        tlb:datumVerzoek  "2023-05-16"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-178> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-174>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek tot publicatie Semantische Modellen voor kennisdeelgebieden VDA.KH en VDA.LDM" ;
+        mb:code           "SDGGD-174" ;
+        tlb:betreft       <urn:sm:vda-lgm_1.0.0> , <urn:sm:vda-kh_1.0.0> ;
+        tlb:datumVerzoek  "2023-05-08"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-174> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-173>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "LGD Persoon" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-173" ;
+        mb:versieVan      <urn:jira:SDGGD-173> ;
+        tlb:datumVerzoek  "2023-05-08"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-173> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-172>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Svp toetsen LGI - Locatie - BAG beschikbaar stellen aan DNI" ;
+        mb:code           "SDGGD-172" ;
+        tlb:datumVerzoek  "2023-05-08"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-172> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-171>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsingsverzoek SM kennisdeelgebied Belastingen op milieugrondslag - Algemeen (Kennisgebied Belastingen op milieugrondslag)" ;
+        mb:code           "SDGGD-171" ;
+        tlb:betreft       <urn:sm:bom-alg_1.0.0> ;
+        tlb:datumVerzoek  "2023-05-04"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-171> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-170>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsingsverzoek SM Kennisdeelgebied Vliegbelasting (kennisgebied Belastingen op milieugrondslag)" ;
+        mb:code           "SDGGD-170" ;
+        tlb:betreft       <urn:sm:bom-vb_1.0.0> ;
+        tlb:datumVerzoek  "2023-05-04"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-170> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-168>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "LGD-Vliegbelastingen-overige middelen (V1.0.0)" ;
+        mb:code           "SDGGD-168" ;
+        tlb:betreft       <urn:lgd:bom-alg_1.0.0> , <urn:lgd:bom-vb_1.0.0> ;
+        tlb:datumVerzoek  "2023-05-01"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-168> ;
+        tlb:status        tlb:Wachtend .
+
+<urn:jira:SDGGD-159>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek Semantische + LGD's van Kennisdeelgebieden SM, KH en LGM" ;
+        mb:code           "SDGGD-159" ;
+        tlb:betreft       <urn:lgd:vda-sm_1.0.0> , <urn:lgd:vda-kh_1.0.0> , <urn:lgd:vda-lgm_1.0.0> ;
+        tlb:datumVerzoek  "2023-04-24"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-159> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-127>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "DAC7 LGG en LGA" ;
+        mb:code           "SDGGD-127" ;
+        tlb:betreft       <urn:lgg:dac7_1.0.0> , <urn:lga:dac7_1.0.0> ;
+        tlb:datumVerzoek  "2022-12-16"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-127> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-115>  a   tlb:Verzoek , tlb:Controleverzoek ;
+        rdfs:label        "Verzoek toetsing LIMs BAG" ;
+        mb:code           "SDGGD-115" ;
+        tlb:datumVerzoek  "2022-11-28"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-115> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-112>  a   tlb:Verzoek ;
+        rdfs:label        "LGI - Beschikbaar stellen BAG - IBG-IAH" ;
+        mb:code           "SDGGD-112" ;
+        tlb:datumVerzoek  "2022-11-16"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-112> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-111>  a   tlb:Verzoek ;
+        rdfs:label        "LGI - Inwinnen BAG - Stand" ;
+        mb:code           "SDGGD-111" ;
+        tlb:datumVerzoek  "2022-11-16"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-111> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-110>  a   tlb:Verzoek ;
+        rdfs:label        "LGI - Inwinnen BAG - Mutaties" ;
+        mb:code           "SDGGD-110" ;
+        tlb:datumVerzoek  "2022-11-16"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-110> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-91>  a    tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "BMS BAG 1.0.0 verzoek publicatie" ;
+        mb:code           "SDGGD-91" ;
+        tlb:betreft       <urn:sm:bag_1.0.0> ;
+        tlb:datumVerzoek  "2022-10-04"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-91> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-76>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Review Logische modellen Fijnstoftoeslag casus Data engineer traineeship" ;
+        mb:code           "SDGGD-76" ;
+        tlb:datumVerzoek  "2022-07-08"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-76> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-46>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feitmodel EWLS 1.0 (FLM)" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-46" ;
+        mb:versieVan      <urn:jira:SDGGD-46> ;
+        tlb:datumVerzoek  "2022-03-04"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-46> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:toets:sm:bag_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM BAG 1.0.0" ;
+        tlb:betreft          <urn:sm:bag_1.0.0> ;
+        tlb:datumToetsing    "2022-12-19"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelB .
+
+<urn:toets:sm:fmr_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM Formeel recht tbv EWLS 1.0.0" ;
+        tlb:betreft          <urn:sm:fmr_1.0.0> ;
+        tlb:datumToetsing    "2022-01-04"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelC .
+
+<urn:toets:sm:fir_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM Financieel recht tbv EWLS 1.0.0" ;
+        tlb:betreft          <urn:sm:fir_1.0.0> ;
+        tlb:datumToetsing    "2022-01-04"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelC .
+
+<urn:toets:sm:ib_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM Inkomstenbelasting tbv EWLS 1.0.0" ;
+        tlb:betreft          <urn:sm:ib_1.0.0> ;
+        tlb:datumToetsing    "2022-01-04"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelC .
+
+<urn:toets:lgd:vda-cad_1.0.0>
+        a                  tlb:Toetsing ;
+        rdfs:label         "Toetsing LGD Context & Attribuutdomeinen" ;
+        tlb:betreft        <urn:lgd:vda-cad_1.0.0> ;
+        tlb:datumToetsing  "2022-04-29"^^xsd:date .
+
+<urn:toets:sm:ib_1.0.1>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM Inkomstenbelasting tbv EWLS 1.0.1" ;
+        tlb:betreft          <urn:sm:ib_1.0.1> ;
+        tlb:datumToetsing    "2022-11-30"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelC .
+
+<urn:toets:lgd:bag_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing LGD BAG 1.0.0" ;
+        tlb:betreft          <urn:lgd:bag_1.0.0> ;
+        tlb:datumToetsing    "2023-01-10"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelB .
+
+<urn:jira:SDGGD-180>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek SM VDA Semantisch Model" ;
+        mb:code           "SDGGD-180" ;
+        tlb:betreft       <urn:sm:vda-sm_1.0.0> ;
+        tlb:datumVerzoek  "2023-05-22"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-180> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-87>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek Begrippenlijst O&P increment 1" ;
+        kgr:kennisgebied  kg:OrganisatieEnPersoneel ;
+        mb:code           "SDGGD-87" ;
+        mb:versieVan      <urn:jira:SDGGD-87> ;
+        tlb:datumVerzoek  "2022-08-30"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-87> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-86>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Review VDA SM modellen Wagenpark" ;
+        kgr:kennisgebied  kg:Voertuig ;
+        mb:code           "SDGGD-86" ;
+        mb:versieVan      <urn:jira:SDGGD-86> ;
+        tlb:datumVerzoek  "2022-08-29"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-86> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-78>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "VDA metamodel (kennisdefinitie)" ;
+        kgr:kennisgebied  kg:VDA ;
+        mb:code           "SDGGD-78" ;
+        mb:versieVan      <urn:jira:SDGGD-78> ;
+        tlb:datumVerzoek  "2022-07-20"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-78> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-70>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "80 FEITMODEL BAG TOP DOWN" ;
+        kgr:kennisgebied  kg:Locatie ;
+        mb:code           "SDGGD-70" ;
+        mb:versieVan      <urn:jira:SDGGD-70> ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-70> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-69>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "70 SEMANTISCH MODEL BAG TOP DOWN" ;
+        kgr:kennisgebied  kg:Locatie ;
+        mb:code           "SDGGD-69" ;
+        mb:versieVan      <urn:jira:SDGGD-69> ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-69> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-68>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "60_LGG Basisadministratie Adressen en Gebouwen 20220422" ;
+        mb:code           "SDGGD-68" ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-68> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-67>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "50_LGI Basisadministratie Adressen en Gebouwen Mutatie 20220422" ;
+        mb:code           "SDGGD-67" ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-67> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-66>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "40_LGI Basisadministratie Adressen en Gebouwen Stand 20220422" ;
+        mb:code           "SDGGD-66" ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-66> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-65>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "BU_LGD_BAG" ;
+        kgr:kennisgebied  kg:Locatie ;
+        mb:code           "SDGGD-65" ;
+        mb:versieVan      <urn:jira:SDGGD-65> ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-65> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-64>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Analyse Brondocumentatie BAG tbv Semantisch model Bottom UP" ;
+        kgr:kennisgebied  kg:Locatie ;
+        mb:code           "SDGGD-64" ;
+        mb:versieVan      <urn:jira:SDGGD-64> ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-64> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-63>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "BU SEMANTISCH MODEL BAG" ;
+        kgr:kennisgebied  kg:Locatie ;
+        mb:code           "SDGGD-63" ;
+        mb:versieVan      <urn:jira:SDGGD-63> ;
+        tlb:datumVerzoek  "2022-05-13"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-63> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-61>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Wagenpark begrippenmodel MVP" ;
+        kgr:kennisgebied  kg:Voertuig ;
+        mb:code           "SDGGD-61" ;
+        mb:versieVan      <urn:jira:SDGGD-61> ;
+        tlb:datumVerzoek  "2022-04-22"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-61> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-59>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "lgd ewls persoon 20220328 voor Model Autoriteit" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-59" ;
+        mb:versieVan      <urn:jira:SDGGD-59> ;
+        tlb:datumVerzoek  "2022-04-07"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-59> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-56>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "snapshot begripsmodel domein OmzetBelasting" ;
+        kgr:kennisgebied  kg:Omzetbelasting ;
+        mb:code           "SDGGD-56" ;
+        mb:versieVan      <urn:jira:SDGGD-56> ;
+        tlb:datumVerzoek  "2022-03-30"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-56> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-55>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsen van definitielijst Inning en Betalingsverkeer" ;
+        kgr:kennisgebied  kg:VorderingenEnBetalingen ;
+        mb:code           "SDGGD-55" ;
+        mb:versieVan      <urn:jira:SDGGD-55> ;
+        tlb:datumVerzoek  "2022-03-24"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-55> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-45>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsing begripsmodel opgesteld vanuit de processimulatie gegevensloket" ;
+        kgr:kennisgebied  kg:Gegevenslogistiek ;
+        mb:code           "SDGGD-45" ;
+        mb:versieVan      <urn:jira:SDGGD-45> ;
+        tlb:datumVerzoek  "2022-02-15"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-45> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-44>  a    tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "SM ter publicatie aanbieden (EWLS)" ;
+        mb:code           "SDGGD-44" ;
+        tlb:betreft       <urn:sm:ib_1.0.0> , <urn:sm:fmr_1.0.0> , <urn:sm:fir_1.0.0> ;
+        tlb:datumVerzoek  "2022-02-08"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-44> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-32>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "EWLS: Toetsing Semantisch Model door Modelautoriteit" ;
+        mb:code           "SDGGD-32" ;
+        tlb:betreft       <urn:sm:ib_1.0.0> , <urn:sm:fmr_1.0.0> , <urn:sm:fir_1.0.0> ;
+        tlb:datumVerzoek  "2021-10-21"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-32> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-31>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsing door modelautoriteit voor het semantisch model" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-31" ;
+        mb:versieVan      <urn:jira:SDGGD-31> ;
+        tlb:datumVerzoek  "2021-10-21"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-31> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-165>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "feedbackverzoek kennisgebied inkoop semantish model, vroege versie om de modellenbiblotheek vroeg in het proces te betrekken" ;
+        kgr:kennisgebied  kg:Inkoop ;
+        mb:code           "SDGGD-165" ;
+        mb:versieVan      <urn:jira:SDGGD-165> ;
+        tlb:datumVerzoek  "2023-04-07"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-165> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-164>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "feedbackverzoek SM kg Bankenbelasting" ;
+        kgr:kennisgebied  kg:Bankenbelasting ;
+        mb:code           "SDGGD-164" ;
+        mb:versieVan      <urn:jira:SDGGD-164> ;
+        tlb:datumVerzoek  "2023-04-07"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-164> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-88>  a    tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Verzoek review dac7 LGD's/LGG & begripsmodel" ;
+        kgr:kennisgebied  kg:InternationaleUitwisseling ;
+        mb:code           "SDGGD-88" ;
+        mb:versieVan      <urn:jira:SDGGD-88> ;
+        tlb:datumVerzoek  "2022-09-06"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-88> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-182>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedback SM Studiefinanciering" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-182" ;
+        mb:versieVan      <urn:jira:SDGGD-182> ;
+        tlb:datumVerzoek  "2023-05-25"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-182> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-169>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Verzoek tot toetsing SM-Persoon-BRP" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-169" ;
+        mb:versieVan      <urn:jira:SDGGD-169> ;
+        tlb:datumVerzoek  "2023-05-04"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-169> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-167>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Verzoek tot toetsing SM-Persoon-BRP" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-167" ;
+        mb:versieVan      <urn:jira:SDGGD-167> ;
+        tlb:datumVerzoek  "2023-04-25"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-167> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-162>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "feedbackverzoek SM kennisdeelgebied Vliegbelasting" ;
+        kgr:kennisgebied  kg:BelastingenOpMilieugrondslag ;
+        mb:code           "SDGGD-162" ;
+        mb:versieVan      <urn:jira:SDGGD-162> ;
+        tlb:datumVerzoek  "2023-04-04"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-162> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-139>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "LGD VLG Vliegbelasting - Milieubelastingen" ;
+        kgr:kennisgebied  kg:BelastingenOpMilieugrondslag ;
+        mb:code           "SDGGD-139" ;
+        mb:versieVan      <urn:jira:SDGGD-139> ;
+        tlb:datumVerzoek  "2023-02-01"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-139> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-138>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "LGD VLG Vliegbelasting - MilieubelastingenVDA-modellen EWLS (LGD's LGG en LGI's) ter beoordeling MA" ;
+        kgr:kennisgebied  kg:BelastingenOpMilieugrondslag ;
+        mb:code           "SDGGD-138" ;
+        mb:versieVan      <urn:jira:SDGGD-138> ;
+        tlb:datumVerzoek  "2023-01-26"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-138> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-135>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Verzoek tot toetsing van het Kerndiagram van het artefact KEX LGM" ;
+        kgr:kennisgebied  kg:VDA ;
+        mb:code           "SDGGD-135" ;
+        mb:versieVan      <urn:jira:SDGGD-135> ;
+        tlb:datumVerzoek  "2023-01-20"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-135> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-133>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Resubmit DAC7 LGD" ;
+        mb:code           "SDGGD-133" ;
+        tlb:betreft       <urn:lgd:inu-dac7_1.0.0> , <urn:lgd:inu-dac_logistiek_1.0.0> ;
+        tlb:datumVerzoek  "2023-01-10"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-133> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-132>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Review VDA LGx modellen Wagenpark" ;
+        mb:code           "SDGGD-132" ;
+        tlb:datumVerzoek  "2023-01-02"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-132> ;
+        tlb:status        tlb:Ingetrokken .
+
+<urn:jira:SDGGD-130>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Informele feedback - begripsmodel BRP" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-130" ;
+        mb:versieVan      <urn:jira:SDGGD-130> ;
+        tlb:datumVerzoek  "2022-12-21"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-130> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-107>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Bespreken modellen IH" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-107" ;
+        mb:versieVan      <urn:jira:SDGGD-107> ;
+        tlb:datumVerzoek  "2022-11-07"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-107> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-185>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek tot publicatie VDA LGD Semantisch Model SNAPSHOT2" ;
+        kgr:kennisgebied  kg:VDA ;
+        mb:code           "SDGGD-185" ;
+        mb:versieVan      <urn:jira:SDGGD-185> ;
+        tlb:datumVerzoek  "2023-06-02"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-185> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-184>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek STUFI VDA modellen: LGD, LGA en twee LGI's" ;
+        mb:code           "SDGGD-184" ;
+        tlb:datumVerzoek  "2023-06-01"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-184> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-188>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "SM Algemeen Persoon" ;
+        mb:code           "SDGGD-188" ;
+        tlb:betreft       <urn:sm:per-alg_1.0.0> ;
+        tlb:datumVerzoek  "2023-06-07"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-188> ;
+        tlb:status        tlb:Wachtend .
+
+<urn:jira:SDGGD-187>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek tot toetsing SM BRP Persoon" ;
+        mb:code           "SDGGD-187" ;
+        tlb:betreft       <urn:sm:per-np_1.0.0> ;
+        tlb:datumVerzoek  "2023-06-06"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-187> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-183>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek Kennisgebied BRI: SM" ;
+        kgr:kennisgebied  kg:BasisregistratieInkomen ;
+        mb:code           "SDGGD-183" ;
+        mb:versieVan      <urn:jira:SDGGD-183> ;
+        tlb:datumVerzoek  "2023-06-01"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-183> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-181>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek EU-KOR (OB): Wetsanalyse, SM en LGD" ;
+        kgr:kennisgebied  kg:Omzetbelasting ;
+        mb:code           "SDGGD-181" ;
+        mb:versieVan      <urn:jira:SDGGD-181> ;
+        tlb:datumVerzoek  "2023-05-24"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-181> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-194>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "toetsing SM HR Persoon" ;
+        mb:code           "SDGGD-194" ;
+        tlb:betreft       <urn:sm:per-org_1.0.0> ;
+        tlb:datumVerzoek  "2023-06-10"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-194> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-193>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "LGD Persoon - kennisdeelgebied algemeen" ;
+        mb:code           "SDGGD-193" ;
+        tlb:betreft       <urn:lgd:per-alg_1.0.0> ;
+        tlb:datumVerzoek  "2023-06-09"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-193> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-197>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek Kennisgebied BRI: LGD" ;
+        kgr:kennisgebied  kg:BasisregistratieInkomen ;
+        mb:code           "SDGGD-197" ;
+        mb:versieVan      <urn:jira:SDGGD-197> ;
+        tlb:datumVerzoek  "2023-06-15"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-197> ;
+        tlb:status        tlb:Onderhanden .
+
+<urn:jira:SDGGD-211>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek - SM Bankenbelasting" ;
+        kgr:kennisgebied  kg:Bankenbelasting ;
+        mb:code           "SDGGD-211" ;
+        mb:versieVan      <urn:jira:SDGGD-211> ;
+        tlb:datumVerzoek  "2023-07-14"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-211> ;
+        tlb:status        tlb:Ingediend .
+
+<urn:jira:SDGGD-210>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek - SM Vliegbelasting" ;
+        mb:code           "SDGGD-210" ;
+        tlb:betreft       <urn:sm:bom-vb_1.0.0> ;
+        tlb:datumVerzoek  "2023-07-14"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-210> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-209>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek - SM Belastingen op milieugrondslag - Algemeen" ;
+        mb:code           "SDGGD-209" ;
+        tlb:betreft       <urn:sm:bom-alg_1.0.0> ;
+        tlb:datumVerzoek  "2023-07-14"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-209> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-213>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek SM Inkoop" ;
+        kgr:kennisgebied  kg:Inkoop ;
+        mb:code           "SDGGD-213" ;
+        mb:versieVan      <urn:jira:SDGGD-213> ;
+        tlb:datumVerzoek  "2023-07-26"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-213> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-232>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek Semantische Modellen VDA Kennishuishouding en VDA Logisch Gegevensmodel" ;
+        mb:code           "SDGGD-232" ;
+        tlb:betreft       <urn:sm:vda-lgm_1.0.0> , <urn:sm:vda-kh_1.0.0> ;
+        tlb:datumVerzoek  "2023-08-25"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-232> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-221>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "LGD-Bankenbelasting-overige middelen (V1.0.0)" ;
+        kgr:kennisgebied  kg:Bankenbelasting ;
+        mb:code           "SDGGD-221" ;
+        mb:versieVan      <urn:jira:SDGGD-221> ;
+        tlb:datumVerzoek  "2023-08-14"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-221> ;
+        tlb:status        tlb:Ingediend .
+
+<urn:jira:SDGGD-219>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek toetsing en publicatie LGD IB Studiefinanciering" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-219" ;
+        mb:versieVan      <urn:jira:SDGGD-219> ;
+        tlb:betreft       <urn:lgd:ib-stufi_1.0.0> ;
+        tlb:datumVerzoek  "2023-08-03"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-219> ;
+        tlb:status        tlb:Onderhanden .
+
+<urn:jira:SDGGD-218>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek tot toetsing SM STUFI kennisgebied IB" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-218" ;
+        mb:versieVan      <urn:jira:SDGGD-218> ;
+        tlb:datumVerzoek  "2023-08-03"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-218> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-240>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Toetsing SM KG O&P, deelgebied Verzuim" ;
+        mb:code           "SDGGD-240" ;
+        tlb:betreft       <urn:sm:oep-vrm_1.0.0> ;
+        tlb:datumVerzoek  "2023-09-08"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-240> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-244>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek SM Formeel recht" ;
+        mb:code           "SDGGD-244" ;
+        tlb:betreft       <urn:sm:fmr_2.0.0> ;
+        tlb:datumVerzoek  "2023-09-15"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-244> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-243>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Verzoek tot Feedback Semantisch Model Kennisgebied DOC" ;
+        kgr:kennisgebied  kg:DocumentEnArchiefbeheer ;
+        mb:code           "SDGGD-243" ;
+        mb:versieVan      <urn:jira:SDGGD-243> ;
+        tlb:datumVerzoek  "2023-09-12"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-243> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-241>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedback LGD stufi" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-241" ;
+        mb:versieVan      <urn:jira:SDGGD-241> ;
+        tlb:datumVerzoek  "2023-09-11"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-241> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-239>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek LGD VDA Semantisch model" ;
+        mb:code           "SDGGD-239" ;
+        tlb:betreft       <urn:lgd:vda-sm_1.0.0> ;
+        tlb:datumVerzoek  "2023-09-08"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-239> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-238>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek SM Studiefinanciering (KG IB)" ;
+        mb:code           "SDGGD-238" ;
+        tlb:betreft       <urn:sm:ib-stufi_1.0.0> ;
+        tlb:datumVerzoek  "2023-09-07"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-238> ;
+        tlb:status        tlb:WachtOpAcceptatie .
+
+<urn:jira:SDGGD-237>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Verzoek tot feedback MRM Metagegevensreferentiemodel-v0.1.5" ;
+        mb:code           "SDGGD-237" ;
+        tlb:betreft       <urn:sm:doc-mgs_1.0.0> ;
+        tlb:datumVerzoek  "2023-09-07"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-237> ;
+        tlb:status        tlb:Wachtend .
+
+<urn:jira:SDGGD-236>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek VDA-modellen SM en LGD Context en attribuutdomeinen ikv Raamwerkrelease R1.2.0" ;
+        mb:code           "SDGGD-236" ;
+        tlb:betreft       <urn:sm:vda-cad_1.1.0> , <urn:lgd:vda-cad_1.1.0> ;
+        tlb:datumVerzoek  "2023-09-06"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-236> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-234>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek SM en LGD Context en attribuutdomeinen" ;
+        kgr:kennisgebied  kg:VDA ;
+        mb:code           "SDGGD-234" ;
+        mb:versieVan      <urn:jira:SDGGD-234> ;
+        tlb:datumVerzoek  "2023-08-31"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-234> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-247>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek tot publicatie Semantisch Model Inkoop" ;
+        kgr:kennisgebied  kg:Inkoop ;
+        mb:code           "SDGGD-247" ;
+        mb:versieVan      <urn:jira:SDGGD-247> ;
+        tlb:datumVerzoek  "2023-09-22"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-247> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-246>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "LGD Persoon" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-246" ;
+        mb:versieVan      <urn:jira:SDGGD-246> ;
+        tlb:datumVerzoek  "2023-09-22"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-246> ;
+        tlb:status        tlb:Wachtend .
+
+<urn:lgg:dac7_1.0.0>  a  mb:Modelversie .
+
+<urn:lga:dac7_1.0.0>  a  mb:Modelversie .
+
+<urn:toets:lgg:dac7_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing LGG DAC7 1.0.0" ;
+        tlb:betreft          <urn:lgg:dac7_1.0.0> ;
+        tlb:datumToetsing    "2023-07-17"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelB .
+
+<urn:toets:lga:dac7_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing LGI DAC7 1.0.0" ;
+        tlb:betreft          <urn:lga:dac7_1.0.0> ;
+        tlb:datumToetsing    "2023-07-17"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelB .
+
+<urn:jira:SDGGD-113>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Resubmit DAC7 SM" ;
+        mb:code           "SDGGD-113" ;
+        tlb:betreft       <urn:sm:inu-dac7_1.0.0> , <urn:sm:inu-dac_logistiek_1.0.0> ;
+        tlb:datumVerzoek  "2022-11-17"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-113> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:toets:lgd:inu-dac7_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing LGD DAC7 1.0.0" ;
+        tlb:betreft          <urn:lgd:inu-dac7_1.0.0> ;
+        tlb:datumToetsing    "2023-02-28"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelBster .
+
+<urn:toets:lgd:inu-dac_logistiek_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing LGD DAC Logistiek 1.0.0" ;
+        tlb:betreft          <urn:lgd:inu-dac_logistiek_1.0.0> ;
+        tlb:datumToetsing    "2023-02-28"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelBster .
+
+<urn:toets:sm:inu-dac_logistiek_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM DAC Logistiek 1.0.0" ;
+        tlb:betreft          <urn:sm:inu-dac_logistiek_1.0.0> ;
+        tlb:datumToetsing    "2023-03-13"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelBster .
+
+<urn:toets:sm:inu-dac7_1.0.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM DAC7 1.0.0" ;
+        tlb:betreft          <urn:sm:inu-dac7_1.0.0> ;
+        tlb:datumToetsing    "2023-03-13"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelBster .
+
+<urn:jira:SDGGD-100>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Toetsingsverzoek LGD BAG 1.0.0" ;
+        mb:code           "SDGGD-100" ;
+        tlb:betreft       <urn:lgd:bag_1.0.0> ;
+        tlb:datumVerzoek  "2022-10-20"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-100> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-99>  a    tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Semantisch model SWOV" ;
+        mb:code           "SDGGD-99" ;
+        tlb:betreft       <urn:sm:ib_1.0.1> ;
+        tlb:datumVerzoek  "2022-10-17"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-99> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-153>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatieverzoek LGD Kennisdeelgebied Contexten en Attribuutdomeinen" ;
+        kgr:kennisgebied  kg:VDA ;
+        mb:code           "SDGGD-153" ;
+        mb:versieVan      <urn:jira:SDGGD-153> ;
+        tlb:betreft       <urn:lgd:vda-cad_1.0.0> ;
+        tlb:datumVerzoek  "2023-03-15"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-153> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-261>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek tot publicatie SM Inkoop" ;
+        mb:code           "SDGGD-261" ;
+        tlb:betreft       <urn:sm:oep-ink_1.0.0> ;
+        tlb:datumVerzoek  "2023-10-27"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-261> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-260>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Modellen EWLS (einde sprint 2 (2023Q4)" ;
+        kgr:kennisgebied  kg:Inkomstenbelasting ;
+        mb:code           "SDGGD-260" ;
+        mb:versieVan      <urn:jira:SDGGD-260> ;
+        tlb:datumVerzoek  "2023-10-27"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-260> ;
+        tlb:status        tlb:Onderhanden .
+
+<urn:jira:SDGGD-257>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "LGA Vliegbelasting" ;
+        kgr:kennisgebied  kg:BelastingenOpMilieugrondslag ;
+        mb:code           "SDGGD-257" ;
+        mb:versieVan      <urn:jira:SDGGD-257> ;
+        tlb:datumVerzoek  "2023-10-26"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-257> ;
+        tlb:status        tlb:Onderhanden .
+
+<urn:jira:SDGGD-264>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Verzoek toetsing en publicatie LGA en twee aanlever LGI's IB Studiefinanciering" ;
+        mb:code           "SDGGD-264" ;
+        tlb:datumVerzoek  "2023-11-01"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-264> ;
+        tlb:status        tlb:Ingediend .
+
+<urn:toets:sm:vda-cad_1.1.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing LGD VDA Context & Attribuutdomeinen 1.1.0" ;
+        tlb:betreft          <urn:sm:vda-cad_1.1.0> ;
+        tlb:datumToetsing    "2023-11-06"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelBster .
+
+<urn:toets:lgd:vda-cad_1.1.0>
+        a                    tlb:Toetsing ;
+        rdfs:label           "Toetsing SM VDA Context & Attribuutdomeinen 1.1.0" ;
+        tlb:betreft          <urn:lgd:vda-cad_1.1.0> ;
+        tlb:datumToetsing    "2023-11-06"^^xsd:date ;
+        tlb:kwaliteitslabel  tlb:KwaliteitslabelBster .
+
+<urn:jira:SDGGD-270>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Toetsing SM Kennisgebied Persoon" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-270" ;
+        mb:versieVan      <urn:jira:SDGGD-270> ;
+        tlb:datumVerzoek  "2023-11-16"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-270> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-269>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Toetsing LGI BAG" ;
+        mb:code           "SDGGD-269" ;
+        tlb:datumVerzoek  "2023-11-16"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-269> ;
+        tlb:status        tlb:Ingediend .
+
+<urn:jira:SDGGD-267>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "DAC7 LGA nieuwe stijl - berichten voor NL" ;
+        mb:code           "SDGGD-267" ;
+        tlb:datumVerzoek  "2023-11-10"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-267> ;
+        tlb:status        tlb:Onderhanden .
+
+<urn:jira:SDGGD-273>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Toetsing LGD Persoon" ;
+        kgr:kennisgebied  kg:Persoon ;
+        mb:code           "SDGGD-273" ;
+        mb:versieVan      <urn:jira:SDGGD-273> ;
+        tlb:datumVerzoek  "2023-11-21"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-273> ;
+        tlb:status        tlb:Duplicaat .
+
+<urn:jira:SDGGD-271>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Eerste opzet model(len) Kennisgebied Successie" ;
+        kgr:kennisgebied  kg:Successie ;
+        mb:code           "SDGGD-271" ;
+        mb:versieVan      <urn:jira:SDGGD-271> ;
+        tlb:datumVerzoek  "2023-11-17"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-271> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-220>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsing semantisch model Kennisgebied BRI" ;
+        mb:code           "SDGGD-220" ;
+        tlb:betreft       <urn:sm:bri_1.0.0> ;
+        tlb:datumVerzoek  "2023-08-10"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-220> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-283>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedback verzoek PROBAS kennismodellen" ;
+        mb:code           "SDGGD-283" ;
+        tlb:datumVerzoek  "2024-01-12"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-283> ;
+        tlb:status        tlb:Ingediend .
+
+<urn:jira:SDGGD-279>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedback verzoek semantisch model Kennisgebied Akten" ;
+        kgr:kennisgebied  kg:Akten ;
+        mb:code           "SDGGD-279" ;
+        mb:versieVan      <urn:jira:SDGGD-279> ;
+        tlb:datumVerzoek  "2024-01-03"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-279> ;
+        tlb:status        tlb:Afgerond .
+
+<urn:jira:SDGGD-292>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Feedbackverzoek SM OZK WOZ" ;
+        mb:code           "SDGGD-292" ;
+        tlb:datumVerzoek  "2024-01-26"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-292> ;
+        tlb:status        tlb:Ingediend .
+
+<urn:jira:SDGGD-291>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatie SM IB Studiefinanciering" ;
+        mb:code           "SDGGD-291" ;
+        tlb:datumVerzoek  "2024-01-25"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-291> ;
+        tlb:status        tlb:Ingediend .
+
+<urn:jira:SDGGD-289>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatie van SBM VDA informatie- gegevensmodel" ;
+        mb:code           "SDGGD-289" ;
+        tlb:betreft       <urn:sm:vda-igm_1.0.0> ;
+        tlb:datumVerzoek  "2024-01-22"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-289> ;
+        tlb:status        tlb:Wachtend .
+
+<urn:jira:SDGGD-288>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatie van SBM VDA kennishuishouding" ;
+        mb:code           "SDGGD-288" ;
+        tlb:betreft       <urn:sm:vda-kh_1.0.0> ;
+        tlb:datumVerzoek  "2024-01-22"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-288> ;
+        tlb:status        tlb:Wachtend .
+
+<urn:jira:SDGGD-287>  a   tlb:Publicatieverzoek , tlb:Verzoek ;
+        rdfs:label        "Publicatie van SBM VDA semantisch model 1.1.0" ;
+        mb:code           "SDGGD-287" ;
+        tlb:betreft       <urn:sm:vda-sm_1.1.0> ;
+        tlb:datumVerzoek  "2024-01-22"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-287> ;
+        tlb:status        tlb:Wachtend .
+
+<urn:jira:SDGGD-280>  a   tlb:Verzoek , tlb:Feedbackverzoek ;
+        rdfs:label        "Toetsing LGD BRI" ;
+        mb:code           "SDGGD-280" ;
+        tlb:datumVerzoek  "2024-01-03"^^xsd:date ;
+        tlb:jiraLink      <https://jira.belastingdienst.nl/servicedesk/customer/portal/78/SDGGD-280> ;
+        tlb:status        tlb:Ingediend .

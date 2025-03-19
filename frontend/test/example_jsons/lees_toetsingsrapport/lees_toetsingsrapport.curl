@@ -1,0 +1,4 @@
+curl --request GET \
+  --url 'http://127.0.0.1:5000/toetsingsrapport/read?=' \
+  --header 'Content-Type: multipart/form-data' \
+  --header 'User-Agent: insomnia/10.0.0'

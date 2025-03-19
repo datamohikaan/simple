@@ -1,0 +1,109 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kgr:     <http://modellenbibliotheek.belastingdienst.nl/def/kgr#> .
+@prefix mb:      <http://modellenbibliotheek.belastingdienst.nl/def/mb#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:      <http://modellenbibliotheek.belastingdienst.nl/def/sm#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+rdfs:label  rdfs:label  "Naam" .
+
+dcterms:BibliographicResource
+        rdfs:label  "kennisbron" .
+
+skos:Concept  rdfs:label  "begrip" .
+
+skos:ConceptScheme  rdfs:label  "SM" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/lgd#Entiteittype>
+        rdfs:label  "entiteittype" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/lgd#Relatietype>
+        rdfs:label  "relatietype" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/lgd#Attribuuttype>
+        rdfs:label  "attribuuttype" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/lgd#Attribuutdomein>
+        rdfs:label  "attribuutdomein" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/lgd#LogischGegevensdefinitieModel>
+        rdfs:label  "LGD" .
+
+mb:versiedatum  rdfs:label  "Versiedatum" .
+
+mb:versienummer  rdfs:label  "Versienummer" .
+
+mb:InUitwerking  rdfs:label  "In uitwerking" .
+
+mb:Uitgewerkt  rdfs:label  "Uitgewerkt" .
+
+mb:Gevalideerd  rdfs:label  "Gevalideerd" .
+
+mb:Finaal  rdfs:label  "Finaal" .
+
+mb:Getoetst  rdfs:label  "Getoetst" .
+
+mb:Gepubliceerd  rdfs:label  "Gepubliceerd" .
+
+mb:releaseDatum  rdfs:label  "Release datum" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Publicatieverzoek>
+        rdfs:label  "Publicatie" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Verzoek>
+        rdfs:label  "Verzoek" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Onderhanden>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#OpenStatus>;
+        rdfs:label  "Onderhanden" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Afgerond>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#GeslotenStatus>;
+        rdfs:label  "Afgerond" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Ingediend>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#OpenStatus>;
+        rdfs:label  "Ingediend" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Wachtend>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#OpenStatus>;
+        rdfs:label  "Wachtend" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Ingetrokken>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#GeslotenStatus>;
+        rdfs:label  "Ingetrokken" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Uitgesteld>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#OpenStatus>;
+        rdfs:label  "Uitgesteld" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#kwaliteitslabel>
+        rdfs:label  "Kwaliteitslabel" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#KwaliteitslabelB>
+        rdfs:label  "B" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Feedbackverzoek>
+        rdfs:label  "Feedback" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#KwaliteitslabelA>
+        rdfs:label  "A" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#KwaliteitslabelBster>
+        rdfs:label  "B*" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#KwaliteitslabelC>
+        rdfs:label  "C" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#KwaliteitslabelD>
+        rdfs:label  "D" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#Duplicaat>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#GeslotenStatus>;
+        rdfs:label  "Duplicaat" .
+
+<http://modellenbibliotheek.belastingdienst.nl/def/tlb#WachtOpAcceptatie>
+        a           <http://modellenbibliotheek.belastingdienst.nl/def/tlb#OpenStatus>;
+        rdfs:label  "Wacht op acceptatie" .

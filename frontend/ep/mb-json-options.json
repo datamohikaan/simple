@@ -1,0 +1,57 @@
+{
+  "soortModel": {
+    "options": {
+      "SBM": "SBM",
+      "CIM": "CIM",
+      "LGA": "LGA",
+      "LGI": "LGI",
+      "LGP": "LGP"
+    }
+  },
+  "soortVerzoek": {
+    "options": {
+      "FBV": "Feedbackverzoek",
+      "TPV": "Toetsings- en publicatieverzoek",
+      "INR": "Interne Review"
+    }
+  },
+  "modelStatus": {
+    "options": {
+      "Finaal": "Finaal",
+      "Uitwerking": "In uitwerking",
+      "Uitgewerkt": "Uitgewerkt",
+      "Gevalideerd": "Gevalideerd",
+      "Gepubliceerd": "Gepubliceerd"
+    }
+  },
+  "modelVerzoekStatusModelautoriteit": {
+    "options": {
+      "Aangemeld": "Aangemeld",
+      "Ingediend": "Ingediend",
+      "Onderhanden": "Onderhanden",
+      "Wachtend": "Wachtend",
+      "WachtOpAcceptatie": "WachtOpAcceptatie",
+      "Afgerond": "Afgerond",
+      "Duplicaat": "Duplicaat"
+    }
+  },
+  "modelVerzoekStatusIndiener": {
+    "options": {
+      "Aangemeld": "Aangemeld",
+      "Ingediend": "Ingediend"
+    }
+  },
+  "modelVerzoekStatus": {
+    "options": {
+      "Uitgesteld": "Uitgesteld",
+      "Aangemeld": "Aangemeld",
+      "Ingediend": "Ingediend",
+      "Onderhanden": "Onderhanden",
+      "Wachtend": "Wachtend",
+      "WachtOpAcceptatie": "WachtOpAcceptatie",
+      "Afgerond": "Afgerond",
+      "Duplicaat": "Duplicaat",
+      "Ingetrokken": "Ingetrokken"
+    }
+  }
+}

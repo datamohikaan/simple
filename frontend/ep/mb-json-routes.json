@@ -1,0 +1,93 @@
+{
+    "py_acties": {
+        "modelverzoek": {
+            "update": "/modelverzoeken/update?"
+        },
+        "rapportage_query": {
+            "Query opslaan": "/rapportage_query/create",
+            "Wijzigingen opslaan": "/rapportage_query/update"
+        },
+        "toetsingsrapport": {
+            "create": "/toetsingsrapport/upload"
+        },
+        "domeinen": {
+            "read": "/kennisgebiedenregister/read/domeinen?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/domeinen?primary_key_1="
+        },
+        "kennisbronnen": {
+            "read": "/kennisgebiedenregister/read/kennisbronnen?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/kennisbronnen?primary_key_1="
+        },
+        "kennisdeelgebieden": {
+            "read": "/kennisgebiedenregister/read/kennisdeelgebieden?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/kennisdeelgebieden?primary_key_1="
+        },
+        "kennisgebieden": {
+            "read": "/kennisgebiedenregister/read/kennisgebieden?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/kennisgebieden?primary_key_1="
+        },
+        "medewerkers": {
+            "read": "/kennisgebiedenregister/read/medewerkers?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/medewerkers?primary_key_1="
+        },
+        "organisatieonderdeel": {
+            "read": "/kennisgebiedenregister/read/organisatieonderdeel?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/organisatieonderdeel?primary_key_1="
+        },
+        "registerwijzigingen": {
+            "read": "/kennisgebiedenregister/read/registerwijzigingen?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/registerwijzigingen?primary_key_1="
+        }
+    },
+    "gebruiker_acties": {
+        "modelverzoek": {
+            "uitstellen": "/modelverzoeken/actie/uitstellen?",
+            "voortzetten": "/modelverzoeken/actie/voortzetten?",
+            "intrekken": "/modelverzoeken/actie/intrekken?",
+            "publiceren": "/modelverzoeken/actie/publiceren?"
+        },
+        "rapportage_query": {
+            "+ Query toevoegen": "/rapportage_query/create_pagina",
+            "read": "/rapportage_query/read",
+            "wijzigen_pagina": "/rapportage_query/wijzigen_pagina",
+            "update": "/rapportage_query/update",
+            "create": "/rapportage_query/create",
+            "run_query": "/rapportage_query/uitvoeren_query",
+            "delete": "/rapportage_query/delete"
+        },
+        "toetsingsrapport": {
+            "create": "/toetsingsrapport/create",
+            "read": "/toetsingsrapport/read",
+            "update": "/toetsingsrapport/update",
+            "delete": "/toetsingsrapport/delete"
+        },
+        "domeinen": {
+            "read": "/kennisgebiedenregister/read/domeinen?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/domeinen?primary_key_1="
+        },
+        "kennisbronnen": {
+            "read": "/kennisgebiedenregister/read/kennisbronnen?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/kennisbronnen?primary_key_1="
+        },
+        "kennisdeelgebieden": {
+            "read": "/kennisgebiedenregister/read/kennisdeelgebieden?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/kennisdeelgebieden?primary_key_1="
+        },
+        "kennisgebieden": {
+            "read": "/kennisgebiedenregister/read/kennisgebieden?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/kennisgebieden?primary_key_1="
+        },
+        "medewerkers": {
+            "read": "/kennisgebiedenregister/read/medewerkers?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/medewerkers?primary_key_1="
+        },
+        "organisatieonderdeel": {
+            "read": "/kennisgebiedenregister/read/organisatieonderdeel?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/organisatieonderdeel?primary_key_1="
+        },
+        "registerwijzigingen": {
+            "read": "/kennisgebiedenregister/read/registerwijzigingen?primary_key_1=",
+            "update": "/kennisgebiedenregister/update/registerwijzigingen?primary_key_1="
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+  "input_element": [
+    {
+      "attribuut": "title_request",
+      "type": "input",
+      "label": "Titel van het verzoek",
+      "waarde": "Hier komt de titel van het verzoek",
+    },
+    {
+      "attribuut": "jira_number",
+      "type": "display",
+      "label": "Service desk Jira nummer",
+      "waarde": "SD1212123"
+    },
+    {
+      "attribuut": "request_type",
+      "label": "Soort verzoek",
+      "opties": [
+          "Feedbackverzoek",
+          "Toetsings- en publicatieverzoek"
+      ],
+      "type": "select",
+      "waarde": "Toetsings- en publicatieverzoek"
+    },
+    {
+      "attribuut": "bd_user",
+      "type": "display",
+      "label": "Eigen user ID",
+      "waarde": "stord00"
+    },
+    {
+      "attribuut": "domain",
+      "type": "input",
+      "label": "Domein actief",
+      "waarde": "Gegevens"
+    },
+    {
+      "attribuut": "extra_modellers",
+      "type": "input",
+      "label": "Extra modelleurs",
+      "waarde": "Tuncn01, jansr34"
+    },
+    {
+      "attribuut": "model_type",
+      "label": "Soort model",
+      "opties": [
+          "LDM",
+          "SBM",
+          "CIM",
+          "LGA",
+          "LGI",
+          "LGG",
+          "LGM"
+      ],
+      "type": "select",
+      "waarde": "SBM"
+    },
+    {
+      "attribuut": "model_status",
+      "label": "Status",
+      "opties": [
+          "Finaal",
+          "In uitwerking",
+          "Uitgewerkt",
+          "Gevalideerd"
+      ],
+      "type": "select",
+      "waarde": "Finaal"
+    },
+    {
+      "attribuut": "upload_moment",
+      "type": "display",
+      "label": "Upload datum van verzoek",
+      "waarde": "29-06-2024"
+    },
+    {
+      "attribuut": "remarks",
+      "type": "input",
+      "label": "Opmerkingen",
+      "waarde": null
+    },
+    {
+      "attribuut": "file_id",
+      "label": "Bestand id",
+      "type": "display",
+      "waarde": "ididid1-ldm"
+    },
+    {
+      "attribuut": "model_name",
+      "label": "Modelnaam",
+      "type": "display",
+      "waarde": null
+    },
+    {
+      "attribuut": "vda_model_name",
+      "label": "VDA Modelnaam",
+      "type": "input",
+      "waarde": null
+    },
+    {
+      "attribuut": "file_extension",
+      "label": "bestand-extensie",
+      "type": "display",
+      "waarde": ".ldm"
+    },
+    {
+      "attribuut": "named_graph",
+      "label": "Uri",
+      "type": "text",
+      "waarde": null
+    }
+  ],
+  "opmerking": "Gegevens succesvol verstuurd.",
+  "py_acties": {
+    "create": "/modelverzoek/create?primary_key_1=SD1212123",
+    "read": "/modelverzoek/read?primary_key_1=SD1212123",
+    "update": "/modelverzoek/update?primary_key_1=SD1212123",
+    "delete": "/modelverzoek/delete?primary_key_1=SD1212123"
+  },
+  "resultaat": "OK",
+  "titel": "Modelverzoek SD123456"
+}

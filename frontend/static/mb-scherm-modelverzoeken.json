@@ -1,0 +1,122 @@
+{
+  "resultaat": "OK",
+  "opmerking": "",
+  "py_acties": {
+    "update": "/modelverzoeken/update"
+  },
+  "gebruiker_acties": {
+    "intrekken": "/modelverzoeken/actie/intrekken",
+    "uitstellen": "/modelverzoeken/actie/uitstellen",
+    "publiceren": "/modelverzoeken/actie/publiceren"
+  },
+  "titel": "Modelverzoek SD123456",
+  "input_element": [
+    {
+      "attribuut": "title_request",
+      "type": "input-text",
+      "verplicht": "required",
+      "label": "Titel van het verzoek",
+      "waarde": "Hier komt de titel van het verzoek"
+    },
+    {
+      "attribuut": "jira_number",
+      "type": "input-text",
+      "verplicht": "required",
+      "label": "Service desk Jira nummer",
+      "waarde": "SD123456"
+    },
+    {
+      "attribuut": "",
+      "type": "link",
+      "label": "Toetsing",
+      "waarde": "bekijk hier de toetsing"
+    },
+    {
+      "attribuut": "bd_user",
+      "type": "input-text",
+      "verplicht": "required",
+      "label": "Eigen user ID",
+      "waarde": "stord00"
+    },
+    {
+      "attribuut": "domain",
+      "type": "input-text",
+      "verplicht": "required",
+      "label": "Domein actief",
+      "waarde": "Gegevens"
+    },
+    {
+      "attribuut": "extra_modellers",
+      "type": "input-text",
+      "verplicht": "required",
+      "label": "Extra modelleurs",
+      "waarde": "Tuncn01, jansr34"
+    },
+    {
+      "attribuut": "request_type",
+      "type": "select",
+      "verplicht": "required",
+      "label": "Soort verzoek",
+      "waarde": "Toetsings- en publicatieverzoek",
+      "opties": [
+        "Optie 1",
+        "Optie 2",
+        "Optie 3",
+        "Toetsings- en publicatieverzoek",
+        "Optie 5",
+        "Optie 6"
+      ]
+    },
+    {
+      "attribuut": "",
+      "type": "display",
+      "label": "Soort model",
+      "waarde": "SBM"
+    },
+    {
+      "attribuut": "",
+      "type": "display",
+      "label": "Status",
+      "waarde": "Ingediend"
+    },
+    {
+      "attribuut": "model_status",
+      "type": "select",
+      "label": "Modelstatus",
+      "waarde": "Finaal",
+      "opties": [
+        "Optie 1",
+        "Optie 2",
+        "Optie 3",
+        "Finaal",
+        "Optie 5",
+        "Optie 6"
+      ]
+    },
+    {
+      "attribuut": "",
+      "type": "onbekend",
+      "label": "Versie",
+      "waarde": "1.1.0"
+    },
+    {
+      "attribuut": "",
+      "type": "display",
+      "label": "Datum verzoek",
+      "waarde": "29-06-2024"
+    },
+    {
+      "attribuut": "remarks",
+      "type": "input-text",
+      "verplicht": "required",
+      "label": "Opmerkingen",
+      "waarde": "Hier staat een opmerking"
+    },
+    {
+      "attribuut": "fileToUpload",
+      "type": "input-file",
+      "label": "Kies het model voor upload",
+      "waarde": "Bestandsnaam_01"
+    }
+  ]
+}

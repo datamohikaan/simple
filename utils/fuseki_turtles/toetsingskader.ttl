@@ -1,0 +1,757 @@
+@prefix kg:   <http://modellenbibliotheek.belastingdienst.nl/id/kennisgebied/> .
+@prefix kgr:  <http://modellenbibliotheek.belastingdienst.nl/def/kgr#> .
+@prefix mb:   <http://modellenbibliotheek.belastingdienst.nl/def/mb#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tk:   <http://modellenbibliotheek.belastingdienst.nl/def/tk#> .
+@prefix tlb:  <http://modellenbibliotheek.belastingdienst.nl/def/tlb#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+tk:Actualiteit  a     <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model de elementen bevat overeenkomstig de tijdsperiode waarvoor het model is beoogd, dwz: of het model actueel is voor het beoogde gebruik." ;
+        rdfs:label    "Actualiteit" ;
+        rdfs:seeAlso  <https://iso25000.com#Currentness> ;
+        <http://xmlns.com/foaf/0.1/page>
+                <https://confluence.belastingdienst.nl/x/u9STDQ> .
+
+tk:ACTU-01  a         <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:comment  "In hoeverre is duidelijk van welke periode het model de kennis expliciteert? In geval de meetwaarde 'duidelijk' of 'onduidelijk' is, wordt aangegeven (voor zover mogelijk) welke periode dit betreft, bijvoorbeeld: \"Belastingjaar 2018\"." ;
+        rdfs:label    "ACTU-01" ;
+        <http://purl.org/dc/terms/title>
+                "Is duidelijk van welke periode het model de kennis expliciteert?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Actualiteit ;
+        <http://www.w3.org/ns/shacl#property>
+                [ <http://www.w3.org/ns/shacl#in>
+                          ( tk:Duidelijk tk:Onduidelijk tk:Onbekend ) ;
+                  <http://www.w3.org/ns/shacl#path>
+                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+                ] ;
+        <http://xmlns.com/foaf/0.1/page>
+                <https://confluence.belastingdienst.nl/x/biizDg> .
+
+tk:ACTU-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "ACTU-02" ;
+        <http://purl.org/dc/terms/title>
+                "Actueel model voor genoemde periode" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Actualiteit .
+
+tk:ACTU-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "ACTU-03" ;
+        <http://purl.org/dc/terms/title>
+                "Waarborgen om actualiteit te borgen bij wijzigingen" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Actualiteit .
+
+tk:Goed  rdfs:label  "Goed" .
+
+tk:Voldoende  rdfs:label  "Voldoende" .
+
+tk:Onvoldoende  rdfs:label  "Onvoldoende" .
+
+tk:Duidelijk  rdfs:label  "Duidelijk" .
+
+tk:Actueel  rdfs:label  "Actueel" .
+
+tk:StabieleKennis  rdfs:label  "Stabiele kennis" .
+
+tk:Begrijpelijkheid  a  <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model correct geïnterpreteerd kan worden, en uitgedrukt is in de passende taal, symbolen en diagrammen. De begrijpelijkheid omvat ook de metadata bij het model." ;
+        rdfs:label    "Begrijpelijkheid" ;
+        rdfs:seeAlso  <https://iso25000.com#Understandability> ;
+        <http://xmlns.com/foaf/0.1/page>
+                <https://confluence.belastingdienst.nl/x/0dSTDQ> .
+
+tk:BEGR-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BEGR-01" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre is het model opgesteld in de Nederlandse taal?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Begrijpelijkheid .
+
+tk:Correct  rdfs:label  "Correct" .
+
+tk:BEGR-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BEGR-02" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre is gebruik gemaakt van de juiste symbolen en diagrammen?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Begrijpelijkheid .
+
+tk:BEGR-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BEGR-03" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre is objectief te begrijpen hoe de kennis is geëxpliciteerd?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Begrijpelijkheid .
+
+tk:Begrijpelijk  rdfs:label  "Begrijpelijk" .
+
+tk:BEGR-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BEGR-04" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre voldoet de verwoording (terminologie) aan de MTHV's?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Begrijpelijkheid .
+
+tk:Juist  rdfs:label  "Juist" .
+
+tk:BEGR-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BEGR-05" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre zijn de modelleringsbeslissingen te begrijpen, in relatie tot de MTHV's?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Begrijpelijkheid .
+
+tk:RationaleBegrijpelijk
+        rdfs:label  "Rationale begrijpelijk" .
+
+tk:BEGR-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BEGR-06" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre is het model te begrijpen voor de kenniscontroleurs?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Begrijpelijkheid .
+
+tk:MetEnigeMoeiteTeBegrijpen
+        rdfs:label  "Met enige moeite te begrijpen" .
+
+tk:Betrouwbaarheid  a  <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model de correcte weergave is zoals beoogd in de kennisbronnen en ook zo als correct door de domeinexperts wordt gezien." ;
+        rdfs:label    "Betrouwbaarheid" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/udSTDQ> .
+
+tk:BETR-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BETR-01" ;
+        <http://purl.org/dc/terms/title>
+                "Validatie door de juiste kenniscontroleurs" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Betrouwbaarheid .
+
+tk:BETR-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BETR-02" ;
+        <http://purl.org/dc/terms/title>
+                "Afbakening kennis overeenkomstig doel" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Betrouwbaarheid .
+
+tk:BETR-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BETR-03" ;
+        <http://purl.org/dc/terms/title>
+                "Model conform gestelde business requirements" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Betrouwbaarheid .
+
+tk:BETR-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BETR-04" ;
+        <http://purl.org/dc/terms/title>
+                "Voldaan aan kaders van de gegevensarchitectuur" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Betrouwbaarheid .
+
+tk:BETR-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BETR-05" ;
+        <http://purl.org/dc/terms/title>
+                "Geschikt voor beoogde use cases" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Betrouwbaarheid .
+
+tk:Onduidelijk  rdfs:label  "Onduidelijk" .
+
+tk:VolledigCorrect  rdfs:label  "Volledig correct" .
+
+tk:Voldoet  rdfs:label  "Voldoet" .
+
+tk:Geschikt  rdfs:label  "Geschikt" .
+
+<https://iso25000.com#Currentness>
+        rdfs:label  "ISO25012: Currentness" ;
+        <http://xmlns.com/foaf/0.1/page>
+                <https://iso25000.com/index.php/en/iso-25000-standards/iso-25012?start=6> .
+
+<https://iso25000.com#Understandability>
+        rdfs:label  "ISO25012: Understandability" ;
+        <http://xmlns.com/foaf/0.1/page>
+                <https://iso25000.com/index.php/en/iso-25000-standards/iso-25012?start=14> .
+
+tk:Compleetheid  a    <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model alle elementen bevat die noodzakelijk zijn voor het te beschrijven kennisgebied." ;
+        rdfs:label    "Compleetheid" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/t9STDQ> .
+
+tk:COMP-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "COMP-01" ;
+        <http://purl.org/dc/terms/title>
+                "Afbakening kennisgebied(en) duidelijk?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Compleetheid .
+
+tk:COMP-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "COMP-02" ;
+        <http://purl.org/dc/terms/title>
+                "Afbakening kennis(deel)gebied overeenkomstig doel" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Compleetheid .
+
+tk:COMP-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "COMP-03" ;
+        <http://purl.org/dc/terms/title>
+                "Verplichte elementen compleet ingevuld" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Compleetheid .
+
+tk:Volledig  rdfs:label  "Volledig" .
+
+tk:Consistentie  a    <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin de elementen uit het model vrij zijn van tegenstellingen en in overeenstemming zijn met andere modelelementen binnen en buiten het getoetste model." ;
+        rdfs:label    "Consistentie" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/tdSTDQ> .
+
+tk:CONS-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "CONS-01" ;
+        <http://purl.org/dc/terms/title>
+                "Kennis(deel)gebied consistent afgebakend" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Consistentie .
+
+tk:ConsistentAfgebakend
+        rdfs:label  "Consistent afgebakend" .
+
+tk:CONS-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "CONS-02" ;
+        <http://purl.org/dc/terms/title>
+                "Intern consistent?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Consistentie .
+
+tk:GrotendeelsConsistent
+        rdfs:label  "Grotendeels consistent" .
+
+tk:CONS-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "CONS-03" ;
+        <http://purl.org/dc/terms/title>
+                "Verticale consistentie" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Consistentie .
+
+tk:CONS-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "CONS-04" ;
+        <http://purl.org/dc/terms/title>
+                "Horizontale consistentie" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Consistentie .
+
+tk:GedeeltelijkConsistent
+        rdfs:label  "Gedeeltelijk consistent" .
+
+tk:CONS-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "CONS-05" ;
+        <http://purl.org/dc/terms/title>
+                "Metadata consistent" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Consistentie .
+
+tk:Consistent  rdfs:label  "Consistent" .
+
+tk:Herleidbaarheid  a  <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin de beschrijving van een modelelement herleidbaar is naar de grondslag in wet-, regelgeving en beleid, alsmede de herleidbaarheid van de wijzingen in het model. Dit omvat onder meer een audit trail naar de reden van wijziging en degene die betrokken is bij de wijziging (zoals: verantwoordelijke, uitvoerder, goedkeurder, toetser)." ;
+        rdfs:label    "Herleidbaarheid" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/w9STDQ> .
+
+tk:HERL-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "HERL-01" ;
+        <http://purl.org/dc/terms/title>
+                "Gemodelleerde kennisgebieden herleidbaar naar vastgestelde kennisgebieden" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Herleidbaarheid .
+
+tk:HERL-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "HERL-02" ;
+        <http://purl.org/dc/terms/title>
+                "Herleidbaar naar juiste kennisbron" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Herleidbaarheid .
+
+tk:HERL-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "HERL-03" ;
+        <http://purl.org/dc/terms/title>
+                "Herleidbaarheid naar de juiste begrippen?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Herleidbaarheid .
+
+tk:HERL-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "HERL-04" ;
+        <http://purl.org/dc/terms/title>
+                "Herleidbaarheid naar het bovenliggende model?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Herleidbaarheid .
+
+tk:HERL-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "HERL-05" ;
+        <http://purl.org/dc/terms/title>
+                "Herleidbaarheid wie wijziging heeft doorgevoerd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Herleidbaarheid .
+
+tk:HERL-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "HERL-06" ;
+        <http://purl.org/dc/terms/title>
+                "Herleidbaarheid reden wijziging" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Herleidbaarheid .
+
+tk:VrijwelVolledig  rdfs:label  "Vrijwel volledig" .
+
+tk:CompleetEnOveralToegepast
+        rdfs:label  "Compleet en overal toegepast" .
+
+tk:GedeeltelijkHerleidbaar
+        rdfs:label  "Gedeeltelijk herleidbaar" .
+
+tk:Naleving  a        <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model en de voortbrenging conform het beleid van de Belastingdienst tot stand is gekomen, waaronder het toepassen van de juiste MTHV's." ;
+        rdfs:label    "Naleving" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/v9STDQ> .
+
+tk:NALE-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-01" ;
+        <http://purl.org/dc/terms/title>
+                "Volgen top-down aanpak van de VDA" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:GevolgdVoorZoverMogelijk
+        rdfs:label  "Gevolgd voor zover mogelijk" .
+
+tk:NALE-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-02" ;
+        <http://purl.org/dc/terms/title>
+                "Bottom-up aanpak naleving" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:GrotendeelsGevolgd
+        rdfs:label  "Grotendeels gevolgd" .
+
+tk:NALE-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-03" ;
+        <http://purl.org/dc/terms/title>
+                "SM methoden en technieken gevolgd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:NALE-11  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-11" ;
+        <http://purl.org/dc/terms/title>
+                "Referentiearchitectuur gevolgd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:VolledigGevolgd  rdfs:label  "Volledig gevolgd" .
+
+tk:NALE-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-04" ;
+        <http://purl.org/dc/terms/title>
+                "SM hulpmiddelen en voorschriften gevolgd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:NALE-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-05" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre zijn de methoden en technieken correct gevolgd bij het opstellen van het formeel-linguistisch model?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:NALE-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-06" ;
+        <http://purl.org/dc/terms/title>
+                "In hoeverre zijn de hulpmiddelen en voorschriften correct gebruikt bij het opstellen van het formeel-linguistisch model?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:NALE-07  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-07" ;
+        <http://purl.org/dc/terms/title>
+                "LGD methoden en technieken gevolgd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:NALE-08  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-08" ;
+        <http://purl.org/dc/terms/title>
+                "LGD hulpmiddelen en voorschriften gevolgd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:NALE-09  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-09" ;
+        <http://purl.org/dc/terms/title>
+                "LGG, LGI, LGA methoden en technieken correct gevolgd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:NALE-10  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NALE-10" ;
+        <http://purl.org/dc/terms/title>
+                "LGG, LGA, LGI hulpmiddelen en voorschriften correct gevolgd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Naleving .
+
+tk:Nauwkeurigheid  a  <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin de elementen uit het model op de correcte wijze zijn gebruikt. Syntactische nauwkeurigheid betreft de mate waarin het model conform het metamodel is uitgedrukt en semantische nauwkeurigheid betreft de mate waarin de modelelementen ook correct zijn gebruikt, zoals beoogd in de VDA." ;
+        rdfs:label    "Nauwkeurigheid" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/sNSTDQ> .
+
+tk:NASY-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASY-01" ;
+        <http://purl.org/dc/terms/title>
+                "SM syntactisch nauwkeurig" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASY-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASY-02" ;
+        <http://purl.org/dc/terms/title>
+                "Feitmodel syntactisch nauwkeurig" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASY-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASY-03" ;
+        <http://purl.org/dc/terms/title>
+                "LGD syntactisch nauwkeurig" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASY-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASY-04" ;
+        <http://purl.org/dc/terms/title>
+                "LGG syntactisch nauwkeurig" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASY-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASY-05" ;
+        <http://purl.org/dc/terms/title>
+                "LGA syntactisch nauwkeurig" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASY-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASY-06" ;
+        <http://purl.org/dc/terms/title>
+                "LGI syntactisch nauwkeurig" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASE-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASE-01" ;
+        <http://purl.org/dc/terms/title>
+                "Afbakening kennisgebieden" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASE-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASE-02" ;
+        <http://purl.org/dc/terms/title>
+                "Omschrijvingen nauwkeurig" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASE-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASE-03" ;
+        <http://purl.org/dc/terms/title>
+                "Betekenis nauwkeurig gemodelleerd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASE-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASE-04" ;
+        <http://purl.org/dc/terms/title>
+                "annotaties nauwkeurig aangebracht?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASE-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASE-05" ;
+        <http://purl.org/dc/terms/title>
+                "Feittypen nauwkeurig gemodelleerd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:NASE-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "NASE-06" ;
+        <http://purl.org/dc/terms/title>
+                "Contexten nauwkeurig toegepast" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Nauwkeurigheid .
+
+tk:ConsistentNauwkeurig
+        rdfs:label  "Consistent nauwkeurig" .
+
+tk:GrotendeelsNauwkeurig
+        rdfs:label  "Grotendeels nauwkeurig" .
+
+tk:GedeeltelijkNauwkeurig
+        rdfs:label  "Gedeeltelijk nauwkeurig" .
+
+tk:ConformMetamodel  rdfs:label  "Conform metamodel" .
+
+tk:Precisie  a        <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model voldoende is uitgewerkt in modelelementen zodat de juiste diepgang is bereikt. Met andere woorden: het model is niet abstract, maar precies concreet genoeg." ;
+        rdfs:label    "Precisie" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/xdSTDQ> .
+
+tk:PREC-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "PREC-01" ;
+        <http://purl.org/dc/terms/title>
+                "Uitwerking annotatie en/of verwijzingen precies genoeg?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Precisie .
+
+tk:PreciesGenoeg  rdfs:label  "Precies genoeg" .
+
+tk:PREC-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "PREC-02" ;
+        <http://purl.org/dc/terms/title>
+                "Uitwerking begrippen precies genoeg?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Precisie .
+
+tk:GrotendeelsPreciesGenoeg
+        rdfs:label  "Grotendeels precies genoeg" .
+
+tk:Toegankelijkheid  a  <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model en de modelelementen daarbinnen toegankelijk zijn voor zowel mensen als voor machines." ;
+        rdfs:label    "Toegankelijkheid" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/vdSTDQ> .
+
+tk:Vertrouwelijkheid  a  <http://www.w3.org/ns/dqv#Dimension> ;
+        rdfs:comment  "De mate waarin het model de vertrouwelijkheid is gewaarborgd van gegevens die met dit model worden vastgelegd of uitgewisseld." ;
+        rdfs:label    "Vertrouwelijkheid" ;
+        <http://xmlns.com/foaf/0.1/page:>
+                <https://confluence.belastingdienst.nl/x/wdSTDQ> .
+
+tk:TOEG-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-01" ;
+        <http://purl.org/dc/terms/title>
+                "Juiste identificeerbare namen?" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-02" ;
+        <http://purl.org/dc/terms/title>
+                "Juiste URI identificatie" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-03" ;
+        <http://purl.org/dc/terms/title>
+                "URI benaderbaar" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-04" ;
+        <http://purl.org/dc/terms/title>
+                "Beschikbaar voor mensen" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-05" ;
+        <http://purl.org/dc/terms/title>
+                "Beschikbaar voor machines" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-06" ;
+        <http://purl.org/dc/terms/title>
+                "Verwijzingen correct" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-07  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-07" ;
+        <http://purl.org/dc/terms/title>
+                "Versies duurzaam benaderbaar" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-08  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-08" ;
+        <http://purl.org/dc/terms/title>
+                "Versiebeheer correct ingericht" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:TOEG-09  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "TOEG-09" ;
+        <http://purl.org/dc/terms/title>
+                "Doorzoekbaar model" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Toegankelijkheid .
+
+tk:VolledigJuist  rdfs:label  "Volledig juist" .
+
+tk:VolledigBenaderbaar
+        rdfs:label  "Volledig benaderbaar" .
+
+tk:NietBeschikbaar  rdfs:label  "Niet beschikbaar" .
+
+tk:Toolspecifiek  rdfs:label  "Toolspecifiek" .
+
+tk:DuurzaamBenaderbaar
+        rdfs:label  "Duurzaam benaderbaar" .
+
+tk:Doorzoekbaar  rdfs:label  "Doorzoekbaar" .
+
+tk:VERT-01  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-01" ;
+        <http://purl.org/dc/terms/title>
+                "Privacy wet- en regelgeving meegenomen" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:NietVanToepassing  rdfs:label  "Niet van toepassing" .
+
+tk:VERT-02  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-02" ;
+        <http://purl.org/dc/terms/title>
+                "Begrippen doelbinding" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:Herleidbaar  rdfs:label  "Herleidbaar" .
+
+tk:VERT-08  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-08" ;
+        <http://purl.org/dc/terms/title>
+                "Autorisatie gemodelleerd" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:Gewaarborgd  rdfs:label  "Gewaarborgd" .
+
+tk:VERT-03  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-03" ;
+        <http://purl.org/dc/terms/title>
+                "LGD doelbinding" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:VERT-04  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-04" ;
+        <http://purl.org/dc/terms/title>
+                "LGA doelbinding" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:VERT-05  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-05" ;
+        <http://purl.org/dc/terms/title>
+                "LGI ontvangen doelbinding" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:VERT-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-06" ;
+        <http://purl.org/dc/terms/title>
+                "LGI verstrekken doelbinding" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:VERT-07  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "VERT-07" ;
+        <http://purl.org/dc/terms/title>
+                "Gemodelleerde gegevens in verwerkingsregister" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Vertrouwelijkheid .
+
+tk:GrotendeelsCorrect
+        rdfs:label  "Grotendeels correct" .
+
+tk:GrotendeelsJuist  rdfs:label  "Grotendeels juist" .
+
+tk:BETR-06  a       <http://www.w3.org/ns/dqv#Metric> ;
+        rdfs:label  "BETR-06" ;
+        <http://purl.org/dc/terms/title>
+                "Model is een juiste weergave van de kennis uit de kennisbronnen" ;
+        <http://www.w3.org/ns/dqv#inDimension>
+                tk:Betrouwbaarheid .
+
+tk:GedeeltelijkOnjuist
+        rdfs:label  "Gedeeltelijk onjuist" .
+
+tk:Onbekend  rdfs:label  "Onbekend" .
+
+tk:VolledigNauwkeurig
+        rdfs:label  "Volledig nauwkeurig" .
+
+tk:Incorrect  rdfs:label  "Incorrect" .
+
+tk:NauwkeurigAfgebakend
+        rdfs:label  "Nauwkeurig afgebakend" .
+
+tk:Nauwkeurig  rdfs:label  "Nauwkeurig" .
+
+tk:OpPuntenTeVeelUitgewerkt
+        rdfs:label  "Op punten te veel uitgewerkt" .
+
+tk:GrotendeelsDuidelijk
+        rdfs:label  "Grotendeels duidelijk" .
+
+tk:VolledigHerleidbaar
+        rdfs:label  "Volledig herleidbaar" .
+
+tk:VolledigDuidelijk  rdfs:label  "Volledig duidelijk" .
+
+tk:CorrectHerleidbaar
+        rdfs:label  "Correct herleidbaar" .
+
+tk:GrotendeelsInOvereenstemming
+        rdfs:label  "Grotendeels in overeenstemming" .
+
+tk:DuidelijkAfgebakend
+        rdfs:label  "Duidelijk afgebakend" .
+
+tk:VolledigCompleetEnAanwezig
+        rdfs:label  "Volledig compleet en aanwezig" .
+
+tk:InternConsistentExternInconsistent
+        rdfs:label  "Intern consistent / Extern inconsistent" .
+
+tk:JuisteVerwoording  rdfs:label  "Juiste verwoording" .
+
+tk:CorrectOpgesteldInDeNederlandseTaal
+        rdfs:label  "Correct opgesteld in de Nederlandse taal" .
+
+tk:CorrectGebruik  rdfs:label  "Correct gebruik" .
+
+tk:EenvoudigTeBegrijpen
+        rdfs:label  "Eenvoudig te begrijpen" .
+
+tk:ValidatieBeperktUitgevoerd
+        rdfs:label  "Validatie beperkt uitgevoerd" .
+
+tk:GrotendeelsCorrectAfgebakend
+        rdfs:label  "Grotendeels correct afgebakend" .
+
+tk:Beschikbaar  rdfs:label  "Beschikbaar" .
+
+tk:GrotendeelsBeschikbaar
+        rdfs:label  "Grotendeels beschikbaar" .
+
+tk:GeborgdInHetModel  rdfs:label  "Geborgd in het model" .

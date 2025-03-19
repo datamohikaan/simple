@@ -1,0 +1,23 @@
+#mbk-gebruiker-acties {
+    text-align: right;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#form-resultaat {
+    margin-top: 20px;
+}
+
+.yasqe-disabled .CodeMirror {
+  cursor: default; /* Change cursor to default pointer */
+}
+
+.yasqe-disabled .CodeMirror-cursor {
+  display: none; /* Hide the cursor */
+}
+
+.yasqe-disabled .CodeMirror-lines {
+  background-color: #f0f0f0; /* Light gray background */
+  border-right: 1px solid #ccc; /* Add a subtle right border */
+}
+

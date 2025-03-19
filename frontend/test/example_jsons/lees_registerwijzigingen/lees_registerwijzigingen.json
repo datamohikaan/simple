@@ -1,0 +1,42 @@
+{
+	"input_element": [
+		{
+			"attribuut": "uri",
+			"label": "Bron",
+			"type": "link",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/id/wijziging/20240704-01"
+		},
+		{
+			"attribuut": "titel",
+			"label": "Titel",
+			"type": "input",
+			"waarde": "Overbrengen kennisgebied Kantoorautomatisering van Bedrijfsvoering naar IV"
+		},
+		{
+			"attribuut": "omschrijving",
+			"label": "Omschrijving",
+			"type": "textarea",
+			"waarde": "Op verzoek van de domeinarchitecten bedrijfsvoering en IV en met goedkeuring van IV architectuur is het kennisgebied Kantoorautomatisering overgegaan van het domein Bedrijfsvoering naar het domein IV. Deze wijziging van het kennisgebiedenregister betreft de registratie hiervan"
+		},
+		{
+			"attribuut": "datum_wijziging",
+			"label": "Datum wijziging",
+			"type": "input",
+			"waarde": "2024-07-04"
+		},
+		{
+			"attribuut": "laatste_wijziging",
+			"format": "DD-MM-YYYY HH:MM",
+			"label": "Laatste wijziging",
+			"type": "datetime",
+			"waarde": "04-10-2024 11:22"
+		}
+	],
+	"opmerking": "Gegevens succesvol verstuurd.",
+	"py_acties": {
+		"read": "/kennisgebiedenregister/read/registerwijzigingen?primary_key_1=http://modellenbibliotheek.belastingdienst.nl/id/wijziging/20240704-01",
+		"update": "/kennisgebiedenregister/update/registerwijzigingen?primary_key_1=http://modellenbibliotheek.belastingdienst.nl/id/wijziging/20240704-01"
+	},
+	"resultaat": "OK",
+	"titel": "get from registerwijzigingen the entry with uri: http://modellenbibliotheek.belastingdienst.nl/id/wijziging/20240704-01"
+}

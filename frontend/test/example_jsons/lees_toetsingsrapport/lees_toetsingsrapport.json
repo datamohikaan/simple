@@ -1,0 +1,17 @@
+{
+	"input_element": [
+		{
+			"attribuut": "binary_data",
+			"label": "Upload toetsingsrapport",
+			"type": "input-file",
+			"verplicht": "required",
+			"waarde": "toetsingsrapport"
+		}
+	],
+	"opmerking": "Gegevens succesvol opgehaald.",
+	"py_acties": {
+		"create": "/toetsingsrapport/upload?modelverzoek_uri=urn:uuid:ec0e0ea5-5b2a-5a66-9601-cecf575c373e",
+		"read": "/toetsingsrapport/read?modelverzoek_uri=urn:uuid:ec0e0ea5-5b2a-5a66-9601-cecf575c373e"
+	},
+	"resultaat": "OK"
+}

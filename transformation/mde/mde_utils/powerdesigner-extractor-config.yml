@@ -1,0 +1,631 @@
+common_attributes:
+- &oid
+  code: oid
+  name: oid
+  path: "@Id"
+- &uuid
+  code: uuid
+  name: uuid
+  path: a:ObjectID
+  type: characters
+  length: 36
+  mandatory: true
+- &parent_uuid
+  code: parent_uuid
+  name: parent uuid
+  path: ../../a:ObjectID
+- &code
+  code: code
+  name: code
+  path: a:Code
+- &name
+  code: name
+  name: name
+  path: a:Name
+- &stereotype
+  code: stereotype
+  name: stereotype
+  path: a:Stereotype
+- &description
+  code: description
+  name: description
+  path: a:Description
+- &datatype
+  code: datatype
+  name: datatype
+  path: a:DataType
+- &length
+  code: length
+  name: length
+  path: a:Length
+- &precision
+  code: precision
+  name: precision
+  path: a:Precision
+- &comment
+  code: comment
+  name: comment
+  path: a:Comment
+- &beweringscontext  #= "BeweringsContext"]/../c:Content/o:Entity/@Ref
+  code: beweringscontext_oid
+  name: beweringscontext_oid
+  path: c:ExtendedCollections/o:ExtendedCollection/a:Name[text() = "BeweringsContext"]/../c:Content/o:Entity/@Ref | c:ExtendedCollections/o:ExtendedCollection/a:Name[text() = "BeweringsContext"]/../c:Content/o:Shortcut/@Ref
+- &registratie_context #= "RegistratieContext"]/../c:Content/o:Entity/@Ref``
+  code: registratie_context_oid
+  name: registratie context_oid
+  path: c:ExtendedCollections/o:ExtendedCollection/a:Name[text() = "RegistratieContext"]/../c:Content/o:Entity/@Ref | c:ExtendedCollections/o:ExtendedCollection/a:Name[text() = "RegistratieContext"]/../c:Content/o:Shortcut/@Ref
+- &tijdscontext #= "Tijdscontext"]/../c:Content/o:Entity/@Ref`
+  code: tijdscontext_oid
+  name: tijdscontext_oid
+  path: c:ExtendedCollections/o:ExtendedCollection/a:Name[text() = "Tijdscontext"]/../c:Content/o:Entity/@Ref | c:ExtendedCollections/o:ExtendedCollection/a:Name[text() = "Tijdscontext"]/../c:Content/o:Shortcut/@Ref
+- &target_uuid
+  code: target_uuid
+  name: target uuid of the shortcut
+  path: a:TargetID
+
+model:
+  code: powerdesigner_ldm
+  name: PowerDesigner LDM metamodel
+  comment: 'Dit model is een xpath extractie model om een PowerDesigner LDM XML om te zetten naar een relationele variant. Inclusief de objecten uit MDDE extensie.'
+  author: Juan-José van der Linden
+  version: '0.1'
+  namespaces:
+    - alias: a
+      uri: attribute
+    - alias: o
+      uri: object
+    - alias: c
+      uri: collection
+  entities:
+    - code: model
+      name: model
+      path: /Model/o:RootObject/c:Children/o:Model
+      attributes:
+      - *oid
+      - *uuid
+      - *code
+      - *name
+      - *comment
+      - *beweringscontext
+      - *registratie_context
+      - *tijdscontext
+      - code: author
+        name: Author
+        path: a:Author
+      - code: version
+        name: version
+        path: a:Version
+      - code: repositoryfilename
+        name: RepositoryFilename
+        path: a:RepositoryFilename
+      - code: modificationdate
+        name: ModificationDate
+        path: a:ModificationDate
+      - code: cdc_timestamp_field
+        name: cdc_timestamp_field
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_timestamp_field']
+      - code: cdc_occurrence_field
+        name: cdc_occurrence_field
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_occurrence_field']
+      - code: cdc_recordtype_field
+        name: cdc_recordtype_field
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_recordtype_field']
+      - code: cdc_recordtype_snapshot
+        name: cdc_recordtype_snapshot
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_recordtype_snapshot']
+      - code: cdc_recordtype_addition
+        name: cdc_recordtype_addition
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_recordtype_addition']
+      - code: cdc_recordtype_modification
+        name: cdc_recordtype_modification
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_recordtype_modification']
+      - code: cdc_recordtype_deletion
+        name: cdc_recordtype_deletion
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_recordtype_deletion']
+      - code: cdc_changetype_field
+        name: cdc_changetype_field
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_changetype_field']
+      - code: cdc_changetype_before
+        name: cdc_changetype_before
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_changetype_before']
+      - code: cdc_changetype_after
+        name: cdc_changetype_after
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='cdc_changetype_after']
+      - code: mde_FunctionalValidFromField
+        name: mde_FunctionalValidFromField
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_FunctionalValidFromField']
+      - code: mde_FunctionalValidUntilField
+        name: mde_FunctionalValidUnitlField
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_FunctionalValidUntilField']
+      - code: mde_FunctionalUntilFieldIsInclusive
+        name: mde_FunctionalUntilFieldIsInclusive
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_FunctionalUntilFieldIsInclusive']
+      - code: mde_TechnicalValidFromField
+        name: mde_TechnicalValidFromField
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_TechnicalValidFromField']
+      - code: mde_TechnicalValidUntilField
+        name: mde_TechnicalValidUnitlField
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_TechnicalValidUntilField']
+      - code: mde_TechnicalUntilFieldIsInclusive
+        name: mde_TechnicalUntilFieldIsInclusive
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_TechnicalUntilFieldIsInclusive']
+
+    - code: mde_namespace
+      name: mde_namespace
+      path: /Model/o:RootObject/c:Children/o:Model/c:ExtendedCompositions/o:ExtendedComposition[a:ExtendedBaseCollection.CollectionName='mde_namespaces']/c:ExtendedComposition.Content/o:ExtendedSubObject
+      attributes:
+      - code: uuid
+        name: uuid
+        path: ../../a:ObjectID
+        type: characters
+        length: 36
+        mandatory: true
+      - code: model_uuid
+        name: model uuid
+        path: ../../../../a:ObjectID
+        type: characters
+        length: 36
+        mandatory: true
+      - *code
+      - *name
+      - code: mde_namespace_uri
+        name: mde_namespace_uri
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_NamespaceURI']
+
+    - code: generated_model
+      name: generated model
+      path: /Model/o:RootObject/c:Children/o:Model/c:GeneratedModels/o:Shortcut
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - <<: *target_uuid
+        code: generated_model_uuid
+    - code: generation_origin
+      name: generation origin
+      path: /Model/o:RootObject/c:Children/o:Model/c:GenerationOrigins/o:Shortcut
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - <<: *target_uuid
+        code: origin_model_uuid
+    - code: source_model
+      name: source model
+      path: /Model/o:RootObject/c:Children/o:Model/c:SourceModels/o:Shortcut
+      attributes:
+      - *oid
+      - <<: *target_uuid
+        code: uuid
+      - *parent_uuid
+      - *code
+      - *name
+      - <<: *uuid
+        code: shortcut_uuid
+    - code: target_model
+      name: target model
+      path: /Model/o:RootObject/c:Children/o:Model/c:TargetModels/o:TargetModel
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - code: external_model_uuid
+        name: target model ObjectID
+        path: a:TargetModelID
+    - code: session_shortcut
+      name: target model session shortcuts
+      path: /Model/o:RootObject/c:Children/o:Model/c:TargetModels/o:TargetModel/c:SessionShortcuts/o:Shortcut
+      attributes:
+      - <<: *parent_uuid
+        code: target_model_uuid
+      - code: shortcut_oid
+        name: shortcut oid
+        path: "@Ref"
+    - code: session_subreplication
+      name: target model session subreplicas
+      path: /Model/o:RootObject/c:Children/o:Model/c:TargetModels/o:TargetModel/c:SessionReplications/o:SubReplication
+      attributes:
+      - <<: *parent_uuid
+        code: target_model_uuid
+      - code: subreplication_oid
+        name: subreplication oid
+        path: "@Ref"
+    - code: entity
+      name: entity
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Entity
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - *stereotype
+      - *comment
+      - code: description
+        name: description
+        path: a:Description
+      - *beweringscontext
+      - *registratie_context
+      - *tijdscontext
+      - code: mdde_sql_expression
+        name: mdde_sql_expression
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mdde_SqlExpression']
+      - code: primary_identifier_oid
+        name: primary identifier reference oid
+        path: c:PrimaryIdentifier/o:Identifier/@Ref
+      - code: mde_EntityPath
+        name: mde_EntityPath
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_EntityPath']
+      - code: mde_FunctionalValidFromField
+        name: mde_FunctionalValidFromField
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mde_FunctionalValidFromField']/c:Content/o:EntityAttribute/@Ref
+      - code: mde_FunctionalValidUntilField
+        name: mde_FunctionalValidUntilField
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mde_FunctionalValidUntilField']/c:Content/o:EntityAttribute/@Ref
+      - code: mde_FunctionalUntilFieldIsInclusive
+        name: mde_FunctionalUntilFieldIsInclusive
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_FunctionalUntilFieldIsInclusive']
+      - code: mde_TechnicalValidFromField
+        name: mde_TechnicalValidFromField
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mde_TechnicalValidFromField']/c:Content/o:EntityAttribute/@Ref
+      - code: mde_TechnicalValidUntilField
+        name: mde_TechnicalValidUntilField
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mde_TechnicalValidUntilField']/c:Content/o:EntityAttribute/@Ref
+      - code: mde_TechnicalUntilFieldIsInclusive
+        name: mde_TechnicalUntilFieldIsInclusive
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_TechnicalUntilFieldIsInclusive']
+      - code: mde_TypeOfFunctionalValidity
+        name: mde_TypeOfFunctionalValidity
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_TypeOfFunctionalValidity']
+    - code: entity_shortcut
+      name: entity shortcut
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Shortcut
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - <<: *target_uuid
+        code: entity_uuid
+    - code: entity_complete
+      name: entity complete
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Entity | /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Shortcut
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - <<: *target_uuid
+        code: entity_uuid
+      - *stereotype
+    - code: attribute
+      name: attribute
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Entity/c:Attributes/o:EntityAttribute
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: entity_uuid
+      - *code
+      - *name
+      - *description
+      - *datatype
+      - *length
+      - *precision
+      - *stereotype
+      - *comment
+      - *beweringscontext
+      - *registratie_context
+      - *tijdscontext
+      - code: mandatory
+        name: mandatory
+        path: a:LogicalAttribute.Mandatory
+      - code: attribute_domain_oid
+        name: attribute domain oid
+        path: c:Domain/o:Domain/@Ref
+      - code: inheritedfrom
+        name: inheritedfrom
+        path: c:InheritedFrom/o:EntityAttribute/@Ref | c:InheritedFrom/o:Shortcut/@Ref
+      - code: attribute_shortcut_oid
+        name: attribute shortcut oid
+        path: c:Domain/o:Shortcut/@Ref
+      - code: mde_AttributePath
+        name: mde_AttributePath
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mde_AttributePath']
+    - code: attribute_shortcut
+      name: attribute shortcut
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Shortcut/c:SubShortcuts/o:Shortcut
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: entity_shortcut_uuid
+      - *code
+      - *name
+      - <<: *target_uuid
+        code: attribute_uuid
+    - code: attribute_complete
+      name: attribute complete
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Entity/c:Attributes/o:EntityAttribute | /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Shortcut/c:SubShortcuts/o:Shortcut
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: entity_uuid
+      - *code
+      - *name
+      - <<: *target_uuid
+        code: attribute_uuid
+    - code: shortcut
+      name: all shortcuts
+      path: /Model/o:RootObject/c:Children/o:Model//o:Shortcut[boolean(@Id)]
+      attributes:
+      - *oid
+      - *uuid
+      - *parent_uuid
+      - *code
+      - *name
+      - *target_uuid
+    - code: identifier
+      name: identifier
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Entity/c:Identifiers/o:Identifier
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: entity_uuid
+      - *code
+      - *name
+      - *comment
+    - code: identifier_attribute
+      name: identifier attribute
+      path: /Model/o:RootObject/c:Children/o:Model/c:Entities/o:Entity/c:Identifiers/o:Identifier/c:Identifier.Attributes/o:EntityAttribute
+      attributes:
+      - <<: *parent_uuid
+        code: identifier_uuid
+      - code: attribute_oid
+        name: attribute oid
+        path: "@Ref"
+    - code: relationship
+      name: relationship
+      path: /Model/o:RootObject/c:Children/o:Model/c:Relationships/o:Relationship
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - *comment
+      - *beweringscontext
+      - *registratie_context
+      - *tijdscontext
+      - code: entity1_oid
+        name: entity1 oid
+        path: c:Object1/o:Entity/@Ref
+      - code: entity2_oid
+        name: entity2 oid
+        path: c:Object2/o:Entity/@Ref
+      - code: dependent_role
+        name: dependent role
+        path: a:DependentRole
+      - code: entity1_to_entity2_role
+        name: entity1 to entity2 role
+        path: a:Entity1ToEntity2Role
+      - code: entity2_to_entity1_role
+        name: entity2 to entity1 role
+        path: a:Entity2ToEntity1Role
+      - code: entity1_to_entity2_role_cardinality
+        name: entity1 to entity2 role cardinality
+        path: a:Entity1ToEntity2RoleCardinality
+      - code: entity2_to_entity1_role_cardinality
+        name: entity2 to entity1 role cardinality
+        path: a:Entity2ToEntity1RoleCardinality
+    - code: relationship_join
+      name: RelationshipJoin
+      path: /Model/o:RootObject/c:Children/o:Model/c:Relationships/o:Relationship/c:Joins/o:RelationshipJoin
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: relationship_uuid
+      - code: attribute1_oid
+        name: attribute1_oid
+        path: c:Object1/o:EntityAttribute/@Ref
+      - code: attribute2_oid
+        name: attribute2_oid
+        path: c:Object2/o:EntityAttribute/@Ref
+    - code: inheritance
+      name: inheritance
+      path: /Model/o:RootObject/c:Children/o:Model/c:Inheritances/o:Inheritance
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - *comment
+      - code: parent_entity_oid
+        name: parent entity oid
+        path: c:ParentEntity/o:Entity/@Ref
+      - code: mutually_exclusive
+        name: mutually exclusive
+        path: a:MutuallyExclusive
+      - code: complete
+        name: complete
+        path: a:BaseLogicalInheritance.Complete
+    - code: inheritance_link
+      name: inheritance link
+      path: /Model/o:RootObject/c:Children/o:Model/c:InheritanceLinks/o:InheritanceLink
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - code: inheritance_oid
+        name: inheritance_oid
+        path: c:Object1/o:Inheritance/@Ref
+      - code: child_entity_oid
+        name: child entity oid
+        path: c:Object2/o:Entity/@Ref
+    - code: domain
+      name: domain
+      path: /Model/o:RootObject/c:Children/o:Model/c:Domains/o:Domain
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - *datatype
+      - *length
+      - *comment
+      - *description
+      - code: list_of_values
+        name: list of values
+        path: a:ListOfValues
+    - code: domain_complete
+      name: domain complete
+      path: /Model/o:RootObject/c:Children/o:Model/c:Domains/o:Domain| /Model/o:RootObject/c:Children/o:Model/c:Domains/o:Shortcut
+      attributes:
+        - *oid
+        - *uuid
+        - <<: *parent_uuid
+          code: model_uuid
+        - *code
+        - *name
+        - *datatype
+        - *length
+        - *comment
+        - *description
+        - code: list_of_values
+          name: list of values
+          path: a:ListOfValues
+    - code: mapping
+      name: mapping
+      path: /Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: model_uuid
+      - *code
+      - *name
+      - code: entity_oid
+        name: entity oid
+        path: c:Classifier/o:Entity/@Ref
+      - code: domain_oid
+        name: domain oid
+        path: "@Ref"
+    - code: mapping_source
+      name: mapping sources
+      path: /Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping/c:SourceClassifiers/o:Shortcut|/Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping/c:SourceClassifiers/o:Entity
+      attributes:
+      - <<: *parent_uuid
+        code: mapping_uuid
+      - code: entity_oid
+        name: entity oid
+        path: "@Ref"
+    - code: mdde_source_object
+      name: mdde_SourceObjects
+      path: /Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping/c:ExtendedCompositions/o:ExtendedComposition[a:ExtendedBaseCollection.CollectionName='mdde_SourceObjects']/c:ExtendedComposition.Content/o:ExtendedSubObject
+      attributes:
+      - *uuid
+      - code: oid
+        name: oid
+        path: "@Id"
+        type: characters
+        length: 36
+        mandatory: true
+      - code: mapping_uuid
+        name: mapping uuid
+        path: ../../../../a:ObjectID
+        type: characters
+        length: 36
+        mandatory: true
+      - *code
+      - *name
+      - code: join_type
+        name: MDDE join type
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mdde_JoinType']
+      - code: join_alias
+        name: MDDE join alias
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mdde_JoinAlias']
+      - code: offset_period
+        name: MDDE Offset Period
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mdde_OffsetPeriod']
+      - code: offset_value
+        name: MDDE Offset Value
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mdde_OffsetValue']
+      - code: joined_entity
+        name: mdde_JoinedObject entity
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_JoinedObject']/c:Content/o:Entity/@Ref|c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_JoinedObject']/c:Content/o:Shortcut/@Ref
+    - code: mdde_join_condition
+      name: mdde_JoinConditions
+      path: /Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping//c:ExtendedCompositions/o:ExtendedComposition[a:ExtendedBaseCollection.CollectionName='mdde_JoinConditions']/c:ExtendedComposition.Content/o:ExtendedSubObject
+      attributes:
+      - code: uuid
+        name: uuid
+        path: ../../a:ObjectID
+        type: characters
+        length: 36
+        mandatory: true
+      - code: source_object_uuid
+        name: MDDE source object uuid
+        path: ../../../../a:ObjectID
+        type: characters
+        length: 36
+        mandatory: true
+      - *code
+      - *name
+      - code: child_attribute_oid
+        name: mdde_ChildAttribute
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_ChildAttribute']/c:Content/o:EntityAttribute/@Ref|c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_ChildAttribute']/c:Content/o:Shortcut/@Ref
+      - code: join_operator
+        name: mdde_JoinOperator - default value is '='
+        path: c:ExtendedAttributes_formalized/c:OriginatingExtension/a:ExtendedAttribute[@name='mdde_JoinOperator']
+      - code: parent_attribute_oid
+        name: mdde_ParentAttribute
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_ParentAttribute']/c:Content/o:EntityAttribute/@Ref|c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_ParentAttribute']/c:Content/o:Shortcut/@Ref
+      - code: parent_source_object_oid
+        name: mdde_ParentSourceObject
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_ParentSourceObject']/c:Content/o:ExtendedSubObject/@Ref
+    - code: attribute_mapping
+      name: attribute mapping
+      path: /Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping/c:StructuralFeatureMaps/o:DefaultStructuralFeatureMapping
+      attributes:
+      - *oid
+      - *uuid
+      - <<: *parent_uuid
+        code: mapping_uuid
+      - code: attribute_oid
+        name: attribute oid
+        path: c:BaseStructuralFeatureMapping.Feature/o:EntityAttribute/@Ref
+      - code: source_object_oid
+        name: source_object_oid
+        path: c:ExtendedCollections/o:ExtendedCollection[a:ExtendedBaseCollection.CollectionName='mdde_SourceObject']/c:Content/o:ExtendedSubObject/@Ref
+    - code: attribute_mapping_source
+      name: attribute mapping sources
+      path: /Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping/c:StructuralFeatureMaps/o:DefaultStructuralFeatureMapping/c:SourceFeatures/o:Shortcut|/Model/o:RootObject/c:Children/o:Model/c:Mappings/o:DefaultObjectMapping/c:StructuralFeatureMaps/o:DefaultStructuralFeatureMapping/c:SourceFeatures/o:EntityAttribute
+      attributes:
+      - <<: *parent_uuid
+        code: attribute_mapping_uuid
+      - code: attribute_oid
+        name: attribute oid
+        path: "@Ref"

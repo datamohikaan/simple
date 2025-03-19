@@ -1,0 +1,3 @@
+curl --request PUT \
+  --url 'http://127.0.0.1:5000/kennisgebiedenregister/update/organisatieonderdeel?sleutel_1=SD1212123&primary_key_1=http%3A%2F%2Fmodellenbibliotheek.belastingdienst.nl%2Fid%2Forganisatie%2FIV' \
+  --header 'Content-Type: multipart/form-data'

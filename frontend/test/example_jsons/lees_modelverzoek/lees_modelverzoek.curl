@@ -1,0 +1,3 @@
+curl --request GET \
+  --url 'http://127.0.0.1:5000/modelverzoek/read?primary_key_1=SD1212123' \
+  --header 'content-type: multipart/form-data'

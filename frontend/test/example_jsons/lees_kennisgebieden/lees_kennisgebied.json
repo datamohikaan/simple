@@ -1,0 +1,78 @@
+{
+	"input_element": [
+		{
+			"attribuut": "uri",
+			"label": "Bron",
+			"type": "link",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/id/kennisgebied/Inkoop"
+		},
+		{
+			"attribuut": "naam",
+			"label": "Naam",
+			"type": "input",
+			"waarde": "Inkoop"
+		},
+		{
+			"attribuut": "code",
+			"label": "Code",
+			"type": "input",
+			"waarde": "INK"
+		},
+		{
+			"attribuut": "domein",
+			"label": "Domein",
+			"type": "link",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/id/domein/Bedrijfsvoering"
+		},
+		{
+			"attribuut": "type_kennisgebied",
+			"label": "Type Kennisgebied",
+			"type": "input",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/def/kgr#EigenKennis"
+		},
+		{
+			"attribuut": "status",
+			"label": "Status",
+			"type": "input",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/def/kgr#BestuurlijkVerankerd"
+		},
+		{
+			"attribuut": "afbakeningstype",
+			"label": "Afbakeningstype",
+			"type": "input",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/def/kgr#Bedrijfsvoering"
+		},
+		{
+			"attribuut": "verantwoordelijk_organisatieonderdeel",
+			"label": "Verantwoordelijk Organisatieonderdeel",
+			"type": "input",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/id/organisatie/CFD"
+		},
+		{
+			"attribuut": "primaire_datasteward",
+			"label": "Primaire Datasteward",
+			"type": "input",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/id/medewerker/peerl03"
+		},
+		{
+			"attribuut": "aanvullende_informatie",
+			"label": "Aanvullende Informatie",
+			"type": "textarea",
+			"waarde": ""
+		},
+		{
+			"attribuut": "laatste_wijziging",
+			"format": "DD-MM-YYYY HH:MM",
+			"label": "Laatste wijziging",
+			"type": "datetime",
+			"waarde": "04-10-2024 11:22"
+		}
+	],
+	"opmerking": "Gegevens succesvol verstuurd.",
+	"py_acties": {
+		"read": "/kennisgebiedenregister/read/kennisgebieden?primary_key_1=http://modellenbibliotheek.belastingdienst.nl/id/kennisgebied/Inkoop",
+		"update": "/kennisgebiedenregister/update/kennisgebieden?primary_key_1=http://modellenbibliotheek.belastingdienst.nl/id/kennisgebied/Inkoop"
+	},
+	"resultaat": "OK",
+	"titel": "get from kennisgebieden the entry with uri: http://modellenbibliotheek.belastingdienst.nl/id/kennisgebied/Inkoop"
+}

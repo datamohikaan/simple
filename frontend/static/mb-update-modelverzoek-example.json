@@ -1,0 +1,92 @@
+{
+  "py_actie": "opslaan_modelautoriteit",
+  "titel": "Modelverzoek SD123456",
+  "input_element": [
+    {
+      "attribuut": "attribuut-naam-1",
+      "type": "input",
+      "label": "Titel van het verzoek",
+      "waarde": "Hier komt de titel van het verzoek"
+    },
+    {
+      "attribuut": "attribuut-naam-2",
+      "type": "input",
+      "label": "Service desk Jira nummer",
+      "waarde": "SD123456"
+    },
+    {
+      "attribuut": "",
+      "type": "link",
+      "label": "Toetsing",
+      "waarde": "bekijk hier de toetsing"
+    },
+    {
+      "attribuut": "attribuut-naam-3",
+      "type": "input",
+      "label": "Eigen user ID",
+      "waarde": "stord00"
+    },
+    {
+      "attribuut": "attribuut-naam-4",
+      "type": "input",
+      "label": "Domein actief",
+      "waarde": "Gegevens"
+    },
+    {
+      "attribuut": "attribuut-naam-5",
+      "type": "input",
+      "label": "Extra modelleurs",
+      "waarde": "Tuncn01, jansr34"
+    },
+    {
+      "attribuut": "attribuut-naam-6",
+      "type": "select",
+      "label": "Soort verzoek",
+      "waarde": "Toetsings- en publicatieverzoek",
+      "opties": ["Optie 1","Optie 2","Optie 3","Toetsings- en publicatieverzoek","Optie 5","Optie 6"]
+    },
+    {
+      "attribuut": "",
+      "type": "display",
+      "label": "Soort model",
+      "waarde": "SBM"
+    },
+    {
+      "attribuut": "",
+      "type": "display",
+      "label": "Status",
+      "waarde": "Ingediend"
+    },
+    {
+      "attribuut": "attribuut-naam-7",
+      "type": "select",
+      "label": "Modelstatus",
+      "waarde": "Finaal",
+      "opties": ["Optie 1","Optie 2","Optie 3","Finaal","Optie 5","Optie 6"]
+    },
+    {
+      "attribuut": "",
+      "type": "display",
+      "label": "Versie",
+      "waarde": "1.1.0"
+    },
+    {
+      "attribuut": "",
+      "type": "display",
+      "label": "Datum verzoek",
+      "waarde": "29-06-2024"
+    },
+    {
+      "attribuut": "attribuut-naam-8",
+      "type": "input",
+      "label": "Opmerkingen",
+      "waarde": "waarde-1"
+    },
+    {
+      "attribuut": "attribuut-naam-9",
+      "type": "upload",
+      "label": "Model",
+      "waarde": "Bestandsnaam_01"
+    }
+  ]
+}

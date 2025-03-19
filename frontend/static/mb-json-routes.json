@@ -1,0 +1,31 @@
+{
+    "modelverzoek": {
+        "create": "/modelverzoek/create",
+        "read": "/modelverzoek/read",
+        "update": "/modelverzoek/update",
+        "delete": "/modelverzoek/delete"
+    },
+    "kennisgebiedenregister": {
+        "create": "/kennisgebiedenregister/create",
+        "read": "/kennisgebiedenregister/read",
+        "update": "/kennisgebiedenregister/update",
+        "delete": "/kennisgebiedenregister/delete"
+    },
+    "rapportage": {
+        "create": "/rapportage/create",
+        "read": "/rapportage/read",
+        "update": "/rapportage/update",
+        "delete": "/rapportage/delete"
+    },
+    "toetsingsrapport": {
+        "create": "/toetsingsrapport/create",
+        "read": "/toetsingsrapport/read",
+        "update": "/toetsingsrapport/update",
+        "delete": "/toetsingsrapport/delete"
+    },
+    "gebruiker_acties": {
+    "intrekken": "/modelverzoeken/actie/intrekken",
+    "uitstellen": "/modelverzoeken/actie/uitstellen",
+    "publiceren": "/modelverzoeken/actie/publiceren"
+  }
+}

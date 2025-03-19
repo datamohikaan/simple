@@ -1,0 +1,17 @@
+curl --request PUT \
+  --url 'http://127.0.0.1:5000/modelverzoek/update?primary_key_1=SD1212123' \
+  --header 'Content-Type: multipart/form-data' \
+  --header 'User-Agent: insomnia/10.0.0' \
+  --form file_id=ididid6 \
+  --form model_name=model_name \
+  --form vda_model_name=vda_model_name \
+  --form file_extension=.ttl \
+  --form named_graph=named_graph \
+  --form bd_user=loc \
+  --form domain=domain \
+  --form title_request=title_request \
+  --form request_type=request_type \
+  --form model_type=model_type \
+  --form model_status=model_status \
+  --form extra_modellers=extra_modellers \
+  --form remarks=remarks

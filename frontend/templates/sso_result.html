@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>User Information</h1>
+    <p id="userData"></p>
+    <p>Gebruiker: {{ usernaam }} ({{ userid }}, {{ usergroep }})</p>
+</body>
+</html>
+
+<script>
+$(document).ready(function () {
+    $("#userdata").html("{{ usernaam }}");
+    console.log("{{ usernaam }}");
+    var userid = "{{ userid }}";
+    console.log(userid);
+    
+});
+
+</script>

@@ -1,0 +1,26 @@
+{
+  "soortModel": {
+    "options": {
+      "SBM": "SBM",
+      "CIM": "CIM",
+      "LGA": "LGA",
+      "LGI": "LGI",
+      "LGP": "LGP"
+    }
+  },
+  "soortVerzoek": {
+    "options": {
+      "FBV": "Feedbackverzoek",
+      "TPV": "Toetsings- en publicatieverzoek",
+      "INR": "Interne Review"
+    }
+  },
+  "modelStatus": {
+    "options": {
+      "Finaal": "Finaal",
+      "Uitwerking": "In uitwerking",
+      "Uitgewerkt": "Uitgewerkt",
+      "Gevalideerd": "Gevalideerd"
+    }
+  }
+}

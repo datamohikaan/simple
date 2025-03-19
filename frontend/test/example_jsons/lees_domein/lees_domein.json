@@ -1,0 +1,36 @@
+{
+	"input_element": [
+		{
+			"attribuut": "uri",
+			"label": "Bron",
+			"type": "link",
+			"waarde": "http://modellenbibliotheek.belastingdienst.nl/id/domein/Auto"
+		},
+		{
+			"attribuut": "naam",
+			"label": "Naam",
+			"type": "input",
+			"waarde": "test"
+		},
+		{
+			"attribuut": "ketenvoorzitter",
+			"label": "Ketenvoorzitter",
+			"type": "input",
+			"waarde": "Scott"
+		},
+		{
+			"attribuut": "laatste_wijziging",
+			"format": "DD-MM-YYYY HH:MM",
+			"label": "Laatste wijziging",
+			"type": "display",
+			"waarde": "04-10-2024 11:42"
+		}
+	],
+	"opmerking": "Gegevens succesvol verstuurd.",
+	"py_acties": {
+		"read": "/kennisgebiedenregister/read/domeinen?primary_key_1=http://modellenbibliotheek.belastingdienst.nl/id/domein/Auto",
+		"update": "/kennisgebiedenregister/update/domeinen?primary_key_1=http://modellenbibliotheek.belastingdienst.nl/id/domein/Auto"
+	},
+	"resultaat": "OK",
+	"titel": "get from domeinen the entry with uri: http://modellenbibliotheek.belastingdienst.nl/id/domein/Auto"
+}

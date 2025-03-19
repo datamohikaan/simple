@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="nl" xml:lang="nl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <title>Modellen bibliotheek</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/static/rdflib.js"></script>
+    <script src="/static/rdfvizlib.js"></script>
+    <script src="/static/ep/endpoint.js"></script>
+    <script>
+      const userid = "{{ userid }}";
+      const usernaam = "{{ usernaam }}";
+      const usergroepnaam = "{{ usergroepnaam }}";
+      const usermenu = "{{ usermenu }}";
+      const parameters = "{{ parameters }}";
+    </script>
+
+    <link rel="stylesheet" href="/static/mb-opmaak.css" />
+    <link rel="stylesheet" href="/static/mb-maak-formulier.css" />
+    <link rel="stylesheet" href="/static/mb-maak-tabel.css" />
+    <link rel="stylesheet" href="/static/mb-tree.css" />
+    <!-- START Yasgui -->
+    <link href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/@triply/yasgui/build/yasgui.min.js"></script>
+    <!-- END Yasgui -->
+  </head>
+
+  <body id="content" style="cursor: default">
+    <noscript>
+      <div id="no-js-enabled-msg">
+        Your web browser must have JavaScript enabled in order for this
+        application to display correctly.
+      </div>
+    </noscript>
+
+    <div>
+      <div class="theme-lichtblauw">
+        <nav class="navbar navbar-expand-lg bld-navbar sticky-top">
+          <div class="container">
+            <img rel="mb-bld-logo" src="/static/mb-bld-logo.jpg" height="60px" />
+            <a class="navbar-brand" rel="home-link">Modellenbibliotheek</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kennisgebiedenregister</a>
+                  <div class="dropdown-menu" data-bs-popper="static">
+
+                    <!--/*********************************************
+                    * Onderstaand is voor https://jira.belastingdienst.nl/secure/attachment/921108/aanpassingen.txt
+                    * GVG-6054-Overzicht-kennisbronnen_detailpagina
+                    * https://jira.belastingdienst.nl/browse/GVG-6054
+                    * index.html (template) Wijzigingen (kleine typefoutjes aangepast in het menu)
+                    ******************************************* -->
+
+                    <a class="dropdown-item" rel="menu-link" nav-url="kennisbronnen">Kennisbronnen</a>
+                    <a class="dropdown-item" rel="menu-link" nav-url="domeinen">Domeinen</a>
+                    <a class="dropdown-item" rel="menu-link" nav-url="kennisgebiedenregister">Kennisgebieden</a>
+                    <a class="dropdown-item" rel="menu-link" nav-url="registerwijzigingen">Registerwijzigingen</a>
+                    <!--  <a class="dropdown-item" rel="menu-link" nav-url="kennisbronen">Kennisbronnen</a> -->
+                    <!--  <a class="dropdown-item" rel="menu-link" nav-url="domeinen">Domeinen</a> -->
+                    <!--  <a class="dropdown-item" rel="menu-link" nav-url="kennisgebiedenregister">Kennisgebiedenregister</a>-->
+                    <!--  <a class="dropdown-item" rel="menu-link" nav-url="registerverwijzingen">Registerverwijzingen</a>-->
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" rel="menu-link" nav-url="kennisbanken"
+                    >Kennisbanken</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    rel="menu-link"
+                    nav-url="toetsingslogboek"
+                    >Toetsingslogboek</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    rel="menu-link"
+                    nav-url="dashboard"
+                    >Dashboard</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    rel="menu-link"
+                    nav-url="over"
+                    >Over</a
+                  >
+                </li>
+                <li id="mb-usermenu" class="nav-item dropdown">
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  id="search-input"
+                  class="form-control me-2"
+                  name="term"
+                  type="search"
+                  placeholder="Zoeken"
+                  aria-label="Zoeken"
+                />
+                <button rel="zoeken" class="btn btn-primary">Zoeken</button>
+              </form>
+              <ul class="navbar-nav">
+                <li id="mb-xxusermenu" class="nav-item dropdown">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col-12 col-lg-12">
+              <div class="bld-pageheading">
+                <p>
+                  <div id="mb-bld-logo" style="display:none"></div>
+                  <span id="breadcrumb"></span>
+                  <br />
+                  <span id="melding" class="mb-rood"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-12">
+              <div class="bld-block-container">
+                <div class="sticky-80">
+                  <div class="screenContent" id="main-block">
+                    <div class="screenContent" id="main-block-kop"></div>
+                    <div class="screenContent" id="main-block-inhoud"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="/static/mb-maak-formulier.js"></script>
+<script src="/static/mb-maak-tabel.js"></script>
+<script src="/static/mb-functies.js"></script>
+
+<style>
+  body {
+    overflow-y: scroll;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 50px;
+  }
+
+  #form-zoeken {
+    margin-left: 1em;
+  }
+
+  .navbar-custom {
+    background-color: lightgreen;
+  }
+
+  .mb-userid {
+    margin-left: 10px;
+  }
+
+  nav {
+    background-color: #333;
+    height: 50px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li:hover {
+    background-color: #555;
+  }
+
+  nav ul li:hover > ul {
+    display: block;
+  }
+
+  nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #0cf1f1;
+    top: 50px;
+    left: 0;
+    width: 200px;
+  }
+
+  nav ul ul li {
+    float: none;
+  }
+
+  nav ul ul li a {
+    color: #000000;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+
+  nav ul ul li a:hover {
+    background-color: #104c7c;
+  }
+
+  .mb-rood {
+    color: #ff0000;
+  }
+
+  .navbar-brand {
+    margin-left: 10px;
+  }
+
+
+  #mb-bld-logo {
+    padding: 5px;
+    border: 1px solid #000000;
+  }
+
+  div.form-group label {
+    font-weight: bold;
+    color: #104c7c;
+    text-align:left; 
+    width: 310px;
+  }
+
+  div.form-group {
+    display:grid;
+    grid-template-columns: max-content auto;
+    grid-gap:5px;
+  }
+  div.form-group label:after { 
+    content: "";
+  }
+
+  .form-control-plaintext {
+    margin-left: 15px;
+  }
+
+</style>

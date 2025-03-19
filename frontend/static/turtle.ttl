@@ -1,0 +1,410 @@
+@prefix kgr: <http://modellenbibliotheek.belastingdienst.nl/def/kgr#> .
+@prefix lgd: <http://modellenbibliotheek.belastingdienst.nl/def/lgd#> .
+@prefix mb: <http://modellenbibliotheek.belastingdienst.nl/def/mb#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://modellenbibliotheek.belastingdienst.nl/lm/1.1.0> a mb:Modelversie ;
+    rdfs:label "CIM VDA Contexten en Attribuutdomeinen-1.1.0" ;
+    mb:naam "CIM VDA Contexten en Attribuutdomeinen-1.1.0" ;
+    mb:status mb:Finaal ;
+    mb:titel "CIM VDA Contexten en Attribuutdomeinen-1.1.0" ;
+    mb:versieVan <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> ;
+    mb:versiedatum "2023-01-01"^^xsd:date ;
+    mb:versienummer "1.1.0" .
+
+<urn:uuid:01c27785-09c1-5c70-98b0-48722d0929eb> a lgd:Attribuutdomein ;
+    rdfs:label "GAD0001" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:095397fa-e677-5093-9456-996ca65547ea> a lgd:Entiteittype ;
+    rdfs:label "registreerbaar" ;
+    lgd:attribuut <urn:uuid:0578279c-1a91-559d-9035-93e8f63a3df7>,
+        <urn:uuid:0ff1c483-595a-59a5-8842-0c5b3eb8ff67>,
+        <urn:uuid:5aecfc53-0f38-536e-915d-368c2d781683>,
+        <urn:uuid:d7987d4e-9ca0-5cb7-8193-1539d9378ee9> ;
+    lgd:gegevensdefinitie "[registreerbaar]" ;
+    lgd:naam "registreerbaar" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:0fa4ee6a-78d1-547e-a175-ebe2064af340> a lgd:Attribuutdomein ;
+    rdfs:label "(L) alfabet" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:1d339cfa-61f4-5323-be6a-c4c9b998aeb3> a lgd:Attribuutdomein ;
+    rdfs:label "(T) tekst" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:1fbe3510-09e9-5ae2-9680-017cd1a263a8> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) generiek kwartaal" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:20ad7603-c291-5eaa-a84b-8ce5ed7045a3> a lgd:Attribuutdomein ;
+    rdfs:label "(N) bedrag in euro" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:24f92433-de6a-541f-89d0-57ad4f2d1182> a lgd:Attribuutdomein ;
+    rdfs:label "(F) echte breuk" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:27301d8e-423d-5e6f-b53b-82d4709e4c24> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdvak - week" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:2b3c429a-7040-5bcc-9a95-9c6e25b3f261> a lgd:Attribuutdomein ;
+    rdfs:label "(N) lengte in meter" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:2b9bbdd2-d07d-5eac-9be2-d5e9da079d4c> a lgd:Attribuutdomein ;
+    rdfs:label "(N) negatief geheel bedrag in euro" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:2f6f188e-72af-553a-9b10-e9bbecd9386b> a lgd:Entiteittype ;
+    rdfs:label "formaat" ;
+    lgd:attribuut <urn:uuid:18efe4a0-2102-54a8-96b4-b1df7fb5f0a6>,
+        <urn:uuid:551549f5-05fc-5ff4-911c-8b4a86014bbc>,
+        <urn:uuid:f62bf2d4-fc48-53ed-b838-52a775a40c4e> ;
+    lgd:gegevensdefinitie "[formaat]" ;
+    lgd:naam "formaat" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:39e7037c-c825-551d-a3a3-88a3b117aaf5> a lgd:Attribuutdomein ;
+    rdfs:label "(N) positief geheel aantal" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:3d3539e3-6015-5829-81ae-4a02000447f6> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdstip - geboortedatum" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:46ad10c3-cd57-535a-8710-3e2e57096ad6> a lgd:Attribuutdomein ;
+    rdfs:label "(N) positief geheel bedrag in euro" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:4a2c2096-4bdc-50cb-b17d-c295be087d21> a lgd:Attribuutdomein ;
+    rdfs:label "(F) onechte breuk" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:5d0f43bb-cefa-54e3-bf2a-06386d6b0e08> a lgd:Entiteittype ;
+    rdfs:label "tijdstip gebonden" ;
+    lgd:attribuut <urn:uuid:5e7cc8f7-4e6e-5fce-b01f-c06b0159d8c9>,
+        <urn:uuid:6238b91e-89f7-571f-b31d-16cd69edc8bb> ;
+    lgd:gegevensdefinitie "[tijdstip gebonden]" ;
+    lgd:naam "tijdstip gebonden" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:5f541bca-d49e-511c-9d12-fbc44668488d> a lgd:Attribuutdomein ;
+    rdfs:label "(N) geheel bedrag in euro" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:62cf3999-22d5-590f-8ac7-bf8c2ff9f5ee> a lgd:Entiteittype ;
+    rdfs:label "tijdvakgebonden" ;
+    lgd:attribuut <urn:uuid:26fa1bd5-ce2f-5723-9b42-a365339d5dca>,
+        <urn:uuid:3217906c-966f-578e-b9dd-0d1351ca260c> ;
+    lgd:gegevensdefinitie "[tijdvakgebonden]" ;
+    lgd:naam "tijdvakgebonden" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:683432d8-2fe4-559a-a7f8-ea974f494d9c> a lgd:Attribuutdomein ;
+    rdfs:label "(L) code met leestekens" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:6866d0f5-c163-5af2-bff6-1d7f4db29834> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdsduur in jaren" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:6a4fd631-5201-5604-b634-7786acee12ef> a lgd:Entiteittype ;
+    rdfs:label "veranderlijk in tijd" ;
+    lgd:attribuut <urn:uuid:18c62956-df4e-5876-8f73-ddcdfbbab648>,
+        <urn:uuid:9f7527c0-d90e-5fb5-befa-b9792b84f80b> ;
+    lgd:gegevensdefinitie "[veranderlijk in tijd]" ;
+    lgd:naam "veranderlijk in tijd" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:6ddec0a5-64fc-5f9f-96c8-df42e3d877e7> a lgd:Entiteittype ;
+    rdfs:label "beweerbaar door meerdere actoren" ;
+    lgd:attribuut <urn:uuid:00cf3d94-b930-5efe-a922-c90a946ef7a6>,
+        <urn:uuid:0911de47-e0a2-5c91-bbd5-0563b63d3553>,
+        <urn:uuid:50e8c89d-8d2c-5505-8b82-9eeefea1b6a2>,
+        <urn:uuid:b88cd784-4a55-5342-96e7-043e0b103350>,
+        <urn:uuid:bf7a5be4-7275-5686-85f2-e5cb9296909c>,
+        <urn:uuid:cbdbaece-1697-54a0-a10f-0850b3be3655> ;
+    lgd:gegevensdefinitie "[beweerbaar door meerdere actoren]" ;
+    lgd:naam "beweerbaar door meerdere actoren" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:721dd3c2-f463-57b4-9bf1-8e7e37842ced> a lgd:Attribuutdomein ;
+    rdfs:label "(N) aantal" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:73fe6647-c623-5913-848c-783a793b486d> a lgd:Attribuutdomein ;
+    rdfs:label "(L) UUID" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:750e9538-7923-57a2-af48-322b94126de9> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) generiek weeknummer" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:793de381-e0ad-56f7-8423-caee01f372aa> a lgd:Attribuutdomein ;
+    rdfs:label "(N) bedrag in munt" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:79fc9551-b806-58a6-80c8-c09668be7890> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) generieke tijd" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:7da640de-b767-5a0d-9992-8a47e8db74d6> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) dag maand" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:7ecd7d4f-161d-54f8-8e32-81932300d520> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdvak - maand" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:92ad2cd2-a771-56cb-9fa8-207a42786373> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) maand" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:a69eb378-bf8f-5f26-a14b-a6eab069b9eb> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdvak - kwartaal" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:b667da13-0184-5ae2-b0e0-3da72b444624> a lgd:Attribuutdomein ;
+    rdfs:label "(N) gewicht in kilogram" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:bcb10301-8cb0-532e-8a41-e7df29458a66> a lgd:Attribuutdomein ;
+    rdfs:label "(L) nummer met leestekens" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:c1638513-ad22-5885-8e8d-4359730e36d9> a lgd:Attribuutdomein ;
+    rdfs:label "(L) enumeratie" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:c3a33e5d-8fde-5baa-8e0f-3b867ab7400c> a lgd:Attribuutdomein ;
+    rdfs:label "(N) bedrag in valuta" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:c3e712b4-c54f-515a-b9a9-0b77df44b547> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdsduur in maanden" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:c70b7142-9d15-5a65-b558-5898f981dc5b> a lgd:Attribuutdomein ;
+    rdfs:label "(L) nummer met 11 proef" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:cfeb1fbd-9cf3-5908-a19a-e78f90fc91e5> a lgd:Entiteittype ;
+    rdfs:label "kalenderjaargebonden" ;
+    lgd:attribuut <urn:uuid:da9187fc-dd85-5abd-b415-f6a50679042d> ;
+    lgd:gegevensdefinitie "[kalenderjaargebonden]" ;
+    lgd:naam "kalenderjaargebonden" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:d5b94e96-a3b4-58f5-93d0-83a3de25f2f9> a lgd:Attribuutdomein ;
+    rdfs:label "(L) nummer" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:de92df42-aef9-5913-be4d-4fcb1b826ad1> a lgd:Attribuutdomein ;
+    rdfs:label "(F) breuk" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:e190db59-5f27-5625-b83e-2034cf8db1d7> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdsduur in dagen" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:eb9a342e-7ebe-59cc-80ed-283543a6c6f1> a lgd:Attribuutdomein ;
+    rdfs:label "(L) alfanumeriek met leestekens" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:ec15c8ad-5a95-5081-bc9e-0c9af5fc8adc> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdsduur in uren" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:f25a35a5-14e4-5348-9d3f-7b9267ef5386> a lgd:Entiteittype ;
+    rdfs:label "eenmalig beweerbaar" ;
+    lgd:attribuut <urn:uuid:165d18fb-d697-5d76-9497-0a296b26c2a5>,
+        <urn:uuid:2d464f88-bb38-5920-979f-ee8ad2a0fd59>,
+        <urn:uuid:3a3ed97d-de4b-5a59-bb3e-67dec66d0bd5>,
+        <urn:uuid:5b3d7149-0773-5369-8520-e8f4baed9760>,
+        <urn:uuid:847859bf-d14d-599f-ad93-bb44fa7312b2>,
+        <urn:uuid:e304a451-e58c-5b5d-9208-63d4e9898e84> ;
+    lgd:gegevensdefinitie "[eenmalig beweerbaar]" ;
+    lgd:naam "eenmalig beweerbaar" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:00cf3d94-b930-5efe-a922-c90a946ef7a6> a lgd:Attribuuttype ;
+    rdfs:label "beweerdersoort" ;
+    lgd:attribuutdomein <urn:uuid:169d3004-bcda-5630-b6bd-d88e855fc9c6> ;
+    lgd:begripsnaam "[beweerdersoort]" .
+
+<urn:uuid:0578279c-1a91-559d-9035-93e8f63a3df7> a lgd:Attribuuttype ;
+    rdfs:label "ict-voorziening" ;
+    lgd:attribuutdomein <urn:uuid:169d3004-bcda-5630-b6bd-d88e855fc9c6> ;
+    lgd:begripsnaam "[ict voorziening]" .
+
+<urn:uuid:0911de47-e0a2-5c91-bbd5-0563b63d3553> a lgd:Attribuuttype ;
+    rdfs:label "beweerderrol" ;
+    lgd:attribuutdomein <urn:uuid:c07ad800-62f8-5fba-9176-8547d322ba43> ;
+    lgd:begripsnaam "[beweerderrol]" .
+
+<urn:uuid:0ff1c483-595a-59a5-8842-0c5b3eb8ff67> a lgd:Attribuuttype ;
+    rdfs:label "registratiemoment eind geldigheid" ;
+    lgd:attribuutdomein <urn:uuid:97a1b74d-e53a-58fc-8ec7-8c6f0130fb88> ;
+    lgd:begripsnaam "[registratiemoment eind geldigheid]" .
+
+<urn:uuid:1373e5ab-4e37-52ae-b4d8-babc2b361455> a lgd:Attribuutdomein ;
+    rdfs:label "(T) tekst 200" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:165d18fb-d697-5d76-9497-0a296b26c2a5> a lgd:Attribuuttype ;
+    rdfs:label "beweerdersleutel" ;
+    lgd:attribuutdomein <urn:uuid:169d3004-bcda-5630-b6bd-d88e855fc9c6> ;
+    lgd:begripsnaam "[beweerdersleutel]" .
+
+<urn:uuid:18c62956-df4e-5876-8f73-ddcdfbbab648> a lgd:Attribuuttype ;
+    rdfs:label "begin geldigheid" ;
+    lgd:attribuutdomein <urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> ;
+    lgd:begripsnaam "[begin geldigheid]" .
+
+<urn:uuid:18efe4a0-2102-54a8-96b4-b1df7fb5f0a6> a lgd:Attribuuttype ;
+    rdfs:label "naam" ;
+    lgd:attribuutdomein <urn:uuid:3841feb9-1aeb-5fe4-af81-cf73007ab148> ;
+    lgd:begripsnaam "[naam]" .
+
+<urn:uuid:26fa1bd5-ce2f-5723-9b42-a365339d5dca> a lgd:Attribuuttype ;
+    rdfs:label "vanaf datum tijdvak" ;
+    lgd:attribuutdomein <urn:uuid:8fa958d6-0dde-5c84-be95-f71ab99d9873> ;
+    lgd:begripsnaam "[vanaf datum tijdvak]" .
+
+<urn:uuid:2d464f88-bb38-5920-979f-ee8ad2a0fd59> a lgd:Attribuuttype ;
+    rdfs:label "beweerdersoort" ;
+    lgd:attribuutdomein <urn:uuid:169d3004-bcda-5630-b6bd-d88e855fc9c6> ;
+    lgd:begripsnaam "[beweerdersoort]" .
+
+<urn:uuid:3217906c-966f-578e-b9dd-0d1351ca260c> a lgd:Attribuuttype ;
+    rdfs:label "tot en met datum tijdvak" ;
+    lgd:attribuutdomein <urn:uuid:8fa958d6-0dde-5c84-be95-f71ab99d9873> ;
+    lgd:begripsnaam "[tot en met datum tijdvak]" .
+
+<urn:uuid:3841feb9-1aeb-5fe4-af81-cf73007ab148> a lgd:Attribuutdomein ;
+    rdfs:label "(L) label zonder leestekens" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:3a3ed97d-de4b-5a59-bb3e-67dec66d0bd5> a lgd:Attribuuttype ;
+    rdfs:label "beweerderrol" ;
+    lgd:attribuutdomein <urn:uuid:c07ad800-62f8-5fba-9176-8547d322ba43> ;
+    lgd:begripsnaam "[beweerderrol]" .
+
+<urn:uuid:50e8c89d-8d2c-5505-8b82-9eeefea1b6a2> a lgd:Attribuuttype ;
+    rdfs:label "beweerdersleutel" ;
+    lgd:attribuutdomein <urn:uuid:169d3004-bcda-5630-b6bd-d88e855fc9c6> ;
+    lgd:begripsnaam "[beweerdersleutel]" .
+
+<urn:uuid:551549f5-05fc-5ff4-911c-8b4a86014bbc> a lgd:Attribuuttype ;
+    rdfs:label "omschrijving" ;
+    lgd:attribuutdomein <urn:uuid:1373e5ab-4e37-52ae-b4d8-babc2b361455> ;
+    lgd:begripsnaam "[omschrijving]" .
+
+<urn:uuid:5aecfc53-0f38-536e-915d-368c2d781683> a lgd:Attribuuttype ;
+    rdfs:label "registratiemoment" ;
+    lgd:attribuutdomein <urn:uuid:97a1b74d-e53a-58fc-8ec7-8c6f0130fb88> ;
+    lgd:begripsnaam "[registratiemoment]" .
+
+<urn:uuid:5b3d7149-0773-5369-8520-e8f4baed9760> a lgd:Attribuuttype ;
+    rdfs:label "beweerder" ;
+    lgd:attribuutdomein <urn:uuid:471f1f95-ee38-53d1-a05d-b8c47e532411> ;
+    lgd:begripsnaam "[beweerder]" .
+
+<urn:uuid:5e7cc8f7-4e6e-5fce-b01f-c06b0159d8c9> a lgd:Attribuuttype ;
+    rdfs:label "gebeurtenis" ;
+    lgd:attribuutdomein <urn:uuid:169d3004-bcda-5630-b6bd-d88e855fc9c6> ;
+    lgd:begripsnaam "[gebeurtenis]" .
+
+<urn:uuid:6238b91e-89f7-571f-b31d-16cd69edc8bb> a lgd:Attribuuttype ;
+    rdfs:label "gebeurtenismoment" ;
+    lgd:attribuutdomein <urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> ;
+    lgd:begripsnaam "[gebeurtenismoment]" .
+
+<urn:uuid:6c71593a-c4ab-5f9f-89b5-a9fbab868e00> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdvak - kalenderjaar" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:847859bf-d14d-599f-ad93-bb44fa7312b2> a lgd:Attribuuttype ;
+    rdfs:label "intrekkingsmoment" ;
+    lgd:attribuutdomein <urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> ;
+    lgd:begripsnaam "[intrekkingsmoment]" .
+
+<urn:uuid:9f7527c0-d90e-5fb5-befa-b9792b84f80b> a lgd:Attribuuttype ;
+    rdfs:label "eind geldigheid" ;
+    lgd:attribuutdomein <urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> ;
+    lgd:begripsnaam "[eind geldigheid]" .
+
+<urn:uuid:a78998b6-3f8b-5370-9b28-1266c649251d> a lgd:Attribuutdomein ;
+    rdfs:label "(L) code" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:b88cd784-4a55-5342-96e7-043e0b103350> a lgd:Attribuuttype ;
+    rdfs:label "beweringsmoment" ;
+    lgd:attribuutdomein <urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> ;
+    lgd:begripsnaam "[beweringsmoment]" .
+
+<urn:uuid:bf7a5be4-7275-5686-85f2-e5cb9296909c> a lgd:Attribuuttype ;
+    rdfs:label "beweerder" ;
+    lgd:attribuutdomein <urn:uuid:471f1f95-ee38-53d1-a05d-b8c47e532411> ;
+    lgd:begripsnaam "[beweerder]" .
+
+<urn:uuid:cbdbaece-1697-54a0-a10f-0850b3be3655> a lgd:Attribuuttype ;
+    rdfs:label "intrekkingsmoment" ;
+    lgd:attribuutdomein <urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> ;
+    lgd:begripsnaam "[intrekkingsmoment]" .
+
+<urn:uuid:d7987d4e-9ca0-5cb7-8193-1539d9378ee9> a lgd:Attribuuttype ;
+    rdfs:label "deregistratiemoment" ;
+    lgd:attribuutdomein <urn:uuid:97a1b74d-e53a-58fc-8ec7-8c6f0130fb88> ;
+    lgd:begripsnaam "[deregistratiemoment]" .
+
+<urn:uuid:da9187fc-dd85-5abd-b415-f6a50679042d> a lgd:Attribuuttype ;
+    rdfs:label "kalenderjaar" ;
+    lgd:attribuutdomein <urn:uuid:6c71593a-c4ab-5f9f-89b5-a9fbab868e00> ;
+    lgd:begripsnaam "[kalenderjaar]" .
+
+<urn:uuid:e304a451-e58c-5b5d-9208-63d4e9898e84> a lgd:Attribuuttype ;
+    rdfs:label "beweringsmoment" ;
+    lgd:attribuutdomein <urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> ;
+    lgd:begripsnaam "[beweringsmoment]" .
+
+<urn:uuid:f62bf2d4-fc48-53ed-b838-52a775a40c4e> a lgd:Attribuuttype ;
+    rdfs:label "code" ;
+    lgd:attribuutdomein <urn:uuid:a78998b6-3f8b-5370-9b28-1266c649251d> ;
+    lgd:begripsnaam "[code]" .
+
+<urn:uuid:471f1f95-ee38-53d1-a05d-b8c47e532411> a lgd:Attribuutdomein ;
+    rdfs:label "(L) alfanumeriek" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:8fa958d6-0dde-5c84-be95-f71ab99d9873> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdstip - datum" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:c07ad800-62f8-5fba-9176-8547d322ba43> a lgd:Attribuutdomein ;
+    rdfs:label "(L) beweerderrol" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:97a1b74d-e53a-58fc-8ec7-8c6f0130fb88> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdstip - tijdstempel" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:169d3004-bcda-5630-b6bd-d88e855fc9c6> a lgd:Attribuutdomein ;
+    rdfs:label "(L) label" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:0ebad7ec-76a7-515b-bc3b-135a9a3497c5> a lgd:Attribuutdomein ;
+    rdfs:label "(DT) tijdstip - datumtijd" ;
+    rdfs:isDefinedBy <urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> .
+
+<urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646> a mb:Model ;
+    rdfs:label "CIM VDA Contexten en Attribuutdomeinen" ;
+    kgr:kennisgebied <http://modellenbibliotheek.belastingdienst.nl/id/kennisgebied/CIM-VDA-Contexten-en-Attribuutdomeinen> ;
+    mb:naam "CIM VDA Contexten en Attribuutdomeinen" ;
+    mb:titel "CIM VDA Contexten en Attribuutdomeinen" .
+
+#Named Graph name: None, urn:uuid:dc5c5559-b3a9-5c4e-a396-62109c22b646

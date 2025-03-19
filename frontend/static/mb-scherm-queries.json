@@ -1,0 +1,48 @@
+{
+    "gebruiker_acties": {
+        "+ Query toevoegen": "/rapportage_query/create"
+    },
+    "input_regels": {
+        "0": [
+            {
+                "attribuut": "naam",
+                "link": "577065fd-ea25-4e23-ba42-07f79fde4cc3",
+                "waarde": "Naam Checker"
+            },
+            {
+                "attribuut": "beschrijving",
+                "waarde": "Checkt of de naam van een graph 123 is2"
+            },
+            {
+                "attribuut": "modeltype",
+                "waarde": "CIM"
+            }
+        ],
+        "1": [
+            {
+                "attribuut": "naam",
+                "link": "cdf1c963-2016-4b8e-ab6d-93882e1f98cd",
+                "waarde": "Gebruiker Checker"
+            },
+            {
+                "attribuut": "beschrijving",
+                "waarde": "Checkt of de gebruiker bestaat"
+            },
+            {
+                "attribuut": "modeltype",
+                "waarde": "SBM"
+            }
+        ]
+    },
+    "kolommen": {
+        "kolom 1": "Naam Query",
+        "kolom 2": "Beschrijving",
+        "kolom 3": "Modeltype"
+    },
+    "opmerking": "Gegevens succesvol opgehaald.",
+    "py_acties": {
+        "read": "/rapportage_query/read"
+    },
+    "resultaat": "OK",
+    "titel": "Overzicht Queries"
+}

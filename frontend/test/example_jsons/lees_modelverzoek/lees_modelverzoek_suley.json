@@ -1,0 +1,117 @@
+{
+	"input_element": [
+		{
+			"attribuut": "file_id",
+			"label": "Bestand id",
+			"type": "display",
+			"waarde": "ididid1-ldm"
+		},
+		{
+			"attribuut": "model_name",
+			"label": "Modelnaam",
+			"type": "display",
+			"waarde": null
+		},
+		{
+			"attribuut": "vda_model_name",
+			"label": "VDA Modelnaam",
+			"type": "input",
+			"waarde": null
+		},
+		{
+			"attribuut": "file_extension",
+			"label": "bestand-extensie",
+			"type": "display",
+			"waarde": ".ldm"
+		},
+		{
+			"attribuut": "named_graph",
+			"label": "Uri",
+			"type": "text",
+			"waarde": null
+		},
+		{
+			"attribuut": "upload_moment",
+			"label": "Upload datum",
+			"type": "display",
+			"waarde": null
+		},
+		{
+			"attribuut": "bd_user",
+			"label": "gebruiker",
+			"type": "display",
+			"waarde": "loc"
+		},
+		{
+			"attribuut": "domain",
+			"label": "Domein",
+			"type": "input",
+			"waarde": null
+		},
+		{
+			"attribuut": "title_request",
+			"label": "Titel van het verzoek",
+			"type": "input",
+			"waarde": null
+		},
+		{
+			"attribuut": "request_type",
+			"label": "Type verzoek",
+			"opties": [
+				"Feedbackverzoek",
+				"Toetsings- en publicatieverzoek"
+			],
+			"type": "display",
+			"waarde": null
+		},
+		{
+			"attribuut": "model_type",
+			"label": "Soort model",
+			"opties": [
+				"LDM",
+				"SBM",
+				"CIM",
+				"LGA",
+				"LGI",
+				"LGG",
+				"LGM"
+			],
+			"type": "select",
+			"waarde": null
+		},
+		{
+			"attribuut": "model_status",
+			"label": "Status",
+			"opties": [
+				"Finaal",
+				"In uitwerking",
+				"Uitgewerkt",
+				"Gevalideerd"
+			],
+			"type": "select",
+			"waarde": null
+		},
+		{
+			"attribuut": "jira_number",
+			"label": "Jira nummer",
+			"type": "display",
+			"waarde": "SD1212123"
+		},
+		{
+			"attribuut": "extra_modellers",
+			"label": "Extra modelleurs",
+			"type": "input",
+			"waarde": null
+		},
+		{
+			"attribuut": "remarks",
+			"label": "Opmerkingen",
+			"type": "input",
+			"waarde": null
+		}
+	],
+	"opmerking": "",
+	"py_actie": "/kennisgebiedenregister/update/modelverzoeken",
+	"resultaat": "OK",
+	"titel": "Modelverzoek SD1212123"
+}

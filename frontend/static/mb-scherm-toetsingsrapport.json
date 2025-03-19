@@ -1,0 +1,16 @@
+{
+  "resultaat": "OK",
+  "opmerking": "",
+  "py_acties": {
+    "upload": "/toetsingsrapport/upload"
+  },
+  "input_element": [
+    {
+      "attribuut": "fileToUpload",
+      "type": "input-file",
+      "verplicht": "required",
+      "label": "Upload toetsingsrapport",
+      "waarde": "toetsingsrapport"
+    }
+  ]
+}

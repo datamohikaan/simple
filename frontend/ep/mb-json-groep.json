@@ -1,0 +1,88 @@
+{
+  "mau": {
+    "usergroepnaam": "Modelautoriteit",
+    "beschrijving": "De Modelautoriteit heeft toegang tot alle modellen in de Modellenbibliotheek en ook toegang heeft tot specifieke functies die alleen de Modelautoriteit mag uitvoeren (zoals het publiceren van een model en het beheren van het kennisgebiedenregister)",
+    "usermenu": {
+      "upload": "Modelverzoek indienen",
+      "modelverzoeken": "Mijn modelverzoeken",
+      "kennisgebieden": "Beheer kennisgebieden",
+      "kennisgebiedenregister": "Beheer kennisgebiedenregister",
+      "toetsingslogboek_": "Beheer toetsingslogboek",
+      "magazijn": "Magazijn",
+      "query_dienst": "Querydienst"
+    }
+  },
+  "das": {
+    "usergroepnaam": "Data steward",
+    "beschrijving": "De Data stewards hebben toegang tot het beheren van de gegevens van de aan hen toegekende kennisgebieden in het kennisgebiedenregister)",
+    "usermenu": {
+      "upload": "Modelverzoek indienen",
+      "modelverzoeken": "Mijn modelverzoeken",
+      "kennisgebieden": "Beheer kennisgebieden"
+    }
+  },
+  "mod": {
+    "usergroepnaam": "Modelleur",
+    "beschrijving": "De Modelleurs die een model kunnen aanbieden aan de Modelautoriteit en vervolgens toegang hebben tot dit model, zelfs als het nog niet is gepubliceerd. Hiermee hebben zij ook toegang tot de geautomatiseerde controles die in de Modellenbibliotheek beschikbaar zijn voor dat specifieke model. Niet alleen degene die een model heeft aangeboden mag bij dit model, maar ook eventueel andere betrokkenen bij dit model (zoals: andere modelleurs die hebben meegeholpen of domeinspecialisten die betrokken zij bij het maken van het model)",
+    "usermenu": {
+      "upload": "Modelverzoek indienen",
+      "modelverzoeken": "Mijn modelverzoeken"
+    }
+  },
+  "beh": {
+    "usergroepnaam": "Beheerder",
+    "beschrijving": "De beheerder heeft toegang tot de functies welke een gebruiksergroep aan een gebruiker kunnen toekennen, wijzigen en/of verwijderen.",
+    "usermenu": {
+      "magazijn": "Magazijn",
+      "query_dienst": "Query dienst",
+      "grafana_dashboard": "Grafana Dashboard",
+      "fuseki_herstel": "Fuseki Herstellen",
+      "gebruikers": "Bewerken gebruikers",
+      "gebruikersgroepen": "Bewerken groepen"
+    }
+  },
+  "loc": {
+    "usergroepnaam": "LOCAL USER",
+    "beschrijving": "Menu opties voor de lokale gebruiker",
+    "usermenu": {
+      "upload": "Modelverzoek indienen",
+      "modelverzoeken": "Mijn modelverzoeken",
+      "magazijn": "Magazijn",
+      "query_dienst": "Query dienst",
+      "grafana_dashboard": "Grafana Dashboard",
+      "fuseki_herstel": "Fuseki Herstellen",
+      "toevoegen_gebruikers": "Toevoegen gebruikers",
+      "gebruikers": "Bewerken gebruikers",
+      "gebruikersgroepen": "Bewerken groepen"
+    }
+  },
+  "pow": {
+    "usergroepnaam": "Power User",
+    "beschrijving": "De power user heeft toegang tot alle functies.",
+    "usermenu": {
+      "upload": "Modelverzoek indienen",
+      "modelverzoeken": "Mijn modelverzoeken",
+      "kennisgebieden": "Beheer kennisgebieden",
+      "kennisgebiedenregister": "Beheer kennisgebiedenregister",
+      "toetsingslogboek_": "Beheer toetsingslogboek",
+      "magazijn": "Magazijn",
+      "download": "Download model",
+      "query_dienst": "Query dienst",
+      "fuseki_herstel": "Fuseki Herstellen",
+      "gebruikers": "Bewerken gebruikers",
+      "gebruikersgroepen": "Bewerken groepen"
+    }
+  },
+  "dflt": {
+    "usergroepnaam": "",
+    "beschrijving": "Algemeen Belastingdienst gebruiker",
+    "usermenu": {}
+  },
+  "cnrp": {
+    "usergroepnaam": "Controlerapportage opsteller",
+    "beschrijving": "De Controlerapportage opsteller heeft toegang tot alle modellen in de Modellenbibliotheek en heeft ook toegang tot het maken en verwijderen van queries in de querydienst",
+    "usermenu": {
+      "query_dienst": "Querydienst"
+    }
+  }
+}

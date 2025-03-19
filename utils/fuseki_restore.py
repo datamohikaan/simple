@@ -1,0 +1,124 @@
+import os
+import sys
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(CURRENT_DIR))
+import warnings
+import requests
+import psycopg2
+import frontend.ep.config as config
+import constants as cn
+
+
+class FusekiRestorer:
+    def __init__(self):
+        self.TURTLE_ROOT_DIR = (
+            os.path.realpath(os.path.join(os.path.dirname(__file__), ".."))
+            + os.sep
+            + "utils"
+            + os.sep
+            + "fuseki_turtles"
+        )
+        self.fuseki_uris = self.obtain_current_graphs_from_fuseki()
+        self.postgres_uris = self.obtain_current_graphs_from_postgres()
+        self.missing_uris = list(self.postgres_uris - self.fuseki_uris)
+
+    @staticmethod
+    def obtain_current_graphs_from_fuseki():
+        graph_uris = []
+        all_graphs_query = "SELECT DISTINCT ?g WHERE {GRAPH ?g{}}"
+        all_graphs = requests.post(
+            config.DATASTORE_LOOKUP_ENDPOINT,
+            data={"query": all_graphs_query},
+            verify=False,
+        ).json()["results"]["bindings"]
+
+        for g in all_graphs:
+            graph_uris.append(g["g"]["value"])
+        return set(graph_uris)
+
+    @staticmethod
+    def obtain_current_graphs_from_postgres():
+        graph_uris = []
+        db_connection = psycopg2.connect(**config.DB_CONFIG)
+        db_cursor = db_connection.cursor()
+        query = "SELECT named_graph FROM Modellen where file_extension = '.ttl';"
+        db_cursor.execute(query)
+        for uri in db_cursor.fetchall():
+            graph_uris.append(
+                str(uri)
+                .replace("(", "")
+                .replace(")", "")
+                .replace(",", "")
+                .replace("'", "")
+            )
+        return set(graph_uris)
+
+    def write_standard_fuseki_turtles(self):
+        for turtle_file in os.listdir(self.TURTLE_ROOT_DIR):
+            rdfdata = open(self.TURTLE_ROOT_DIR + os.sep + turtle_file).read()
+            endpoint = (
+                config.DATASTORE_ENDPOINT
+                + "?graph=urn:name:"
+                + turtle_file.replace(".ttl", "")
+            )
+            requests.put(
+                endpoint,
+                data=rdfdata.encode("utf-8"),
+                headers=cn.turtle_headers,
+                verify=False,
+            )
+
+    def restore_fuseki(self):
+        # obtain turtle from postgres
+        db_connection = psycopg2.connect(**config.DB_CONFIG)
+        db_cursor = db_connection.cursor()
+
+        # writing to fuseki
+        self.write_standard_fuseki_turtles()
+        for uri in self.missing_uris:
+            db_cursor.execute(
+                f"SELECT binary_data FROM Modellen WHERE named_graph = '{uri}' AND file_extension = '.ttl';"
+            )
+            db_connection.commit()
+            rdfdata = db_cursor.fetchone()[0].tobytes()
+            requests.put(
+                config.DATASTORE_ENDPOINT + "?graph=" + uri,
+                data=rdfdata,
+                headers=cn.turtle_headers,
+                verify=False,
+            )
+        db_cursor.close()
+        db_connection.close()
+
+
+def main():
+    fuseki_restorer = FusekiRestorer()
+    fuseki_restorer.write_standard_fuseki_turtles()
+
+    # Print Fuseki Report
+    print(f"There are {len(fuseki_restorer.fuseki_uris)} named graphs in Fuseki:")
+    [print(uri) for uri in fuseki_restorer.fuseki_uris]
+    print(
+        "----------------------------------------------------------------------------------"
+    )
+
+    # Print Postgres Report
+    print(f"There are {len(fuseki_restorer.postgres_uris)} named graphs in Postgres:")
+    [print(uri) for uri in fuseki_restorer.postgres_uris]
+    print(
+        "----------------------------------------------------------------------------------"
+    )
+
+    # Difference between two databases and restore
+    if len(fuseki_restorer.missing_uris) > 0:
+        fuseki_restorer.restore_fuseki()
+        print(f"There are {len(fuseki_restorer.missing_uris)} named graphs restored:")
+        [print(uri) for uri in fuseki_restorer.missing_uris]
+    else:
+        print("There are no named graphs to restore. Fuseki and Postgres are in sync.")
+
+
+if __name__ == "__main__":
+    warnings.filterwarnings("ignore")
+    main()

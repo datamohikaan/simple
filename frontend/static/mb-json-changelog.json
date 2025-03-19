@@ -1,0 +1,84 @@
+{
+    "release_note": [
+        {
+            "versienummer": "V.1.4.2  ... ",
+            "versiedatum": "17-03-2025 12:00",
+            "omschrijving": "Mogelijkheid tot opvoeren van een toetsingsrapport door de Modelautoriteit - transformatie..",
+            "zichtbaar": "J"
+        },  
+      {
+            "versienummer": "V.1.4.1 ",
+            "versiedatum": "07-03-2025",
+            "omschrijving": "Rapportages dynamisch maken. Toetsingen gekoppeld aan querydienst.",
+            "zichtbaar": "J"
+        },
+                  {
+            "versienummer": "V.1.4.0 ",
+            "versiedatum": "18-2-2025",
+            "omschrijving": "De Querydienst-pagina maakt het nu voor de modelautoriteit mogelijk om rapportage-queries te schrijven, wijzigen en opslaan. Andere gebruikers kunnen deze rapportage-queries zien maar niet aanpassen. Bugfixes zijn opgelost",
+            "zichtbaar": "J"
+        },
+            {
+            "versienummer": "V.1.3.3 ",
+            "versiedatum": "15-1-2025",
+            "omschrijving": "Het uploaden van een LDM of SBM bestand geeft nu een correcte foutmelding als het formaat niet klopt. En het uploaden van een SBM geeft een foutmelding als het kennisgebied of kennisdeelgebied niet kloppen.",
+            "zichtbaar": "J"
+        },
+      {
+            "versienummer": "V.1.3.2 ",
+            "versiedatum": "9-1-2025",
+            "omschrijving": "Het uploaden van een LDM of SBM bestand geeft nu een correcte foutmelding als het formaat niet klopt. En het uploaden van een SBM geeft een foutmelding als het kennisgebied of kennisdeelgebied niet kloppen. Daarnaast is ook de modelnaamgeving geupdate conform wensen VDA",
+            "zichtbaar": "J"
+        },
+      {
+            "versienummer": "V.1.3.1 ",
+            "versiedatum": "7-1-2025",
+            "omschrijving": "Query verbeteringen",
+            "zichtbaar": "J"
+        },
+        {
+            "versienummer": "V.1.3.0",
+            "versiedatum": "27-11-2024",
+            "omschrijving": "Toevoegen van updatemogelijkheid op een modelverzoek voor modelautoriteit en indieners (datasteward/modelleur).",
+            "zichtbaar": "J"
+        },
+        {
+            "versienummer": "V.1.2.6 ",
+            "versiedatum": "31-10-2024",
+            "omschrijving": "Over pagina",
+            "zichtbaar": "J"
+        },
+        {
+            "versienummer": "V.1.2.5",
+            "versiedatum": "5-9-2024",
+            "omschrijving": "MDE,statusverandering,toetsingsrapport",
+            "zichtbaar": "J"
+        },
+      {
+            "versienummer": "V.1.2.4",
+            "versiedatum": "22-8-2024",
+            "omschrijving": "Bugfix in queries",
+            "zichtbaar": "J"
+        },
+		{
+            "versienummer": "V.1.2.3",
+            "versiedatum": "12-8-2024",
+            "omschrijving": "Tonen kwaliteitsadvies ",
+            "zichtbaar": "J"
+        },
+		{
+            "versienummer": "V.1.2.2",
+            "versiedatum": "8-8-2024",
+            "omschrijving": "Visualisaties",
+            "zichtbaar": "N"
+        },
+		{
+            "versienummer": "V.1.2.1",
+            "versiedatum": "24-7-2024",
+            "omschrijving": "Downloadfunctionaliteit, bugfixes",
+            "zichtbaar": "N"
+        }
+
+
+    ]
+}

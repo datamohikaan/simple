@@ -1,0 +1,4 @@
+curl --request POST \
+  --url 'http://127.0.0.1:5000/modelverzoeken/acties/publiceren?verzoek=http%3A%2F%2Fmodellenbibliotheek.belastingdienst.nl%2Fid%2Fverzoek%2F4bf297ee4e874f4583ae0f8ac8400bb6' \
+  --header 'Content-Type: multipart/form-data' \
+  --header 'User-Agent: insomnia/10.0.0'

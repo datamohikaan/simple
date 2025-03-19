@@ -1,0 +1,66 @@
+{
+    "resultaat": "OK",
+    "opmerking": "",
+    "py_acties": {
+        "Query toevoegen": "/query/create",
+        "Wijzigingen opslaan": "/query/update"
+    },
+    "gebruiker_acties": {
+        "wijzigen": "/query/actie/wijzigen"
+    },
+    "titel": "Nieuwe query toevoegen",
+    "titel2": "Bestaande query",
+    "input_element": [
+        {
+            "attribuut": "model",
+            "type": "select",
+            "verplicht": "required",
+            "label": "Kies een model",
+            "waarde": "",
+            "opties": [
+                "Kies een model",
+                "model 1",
+                "model 2",
+                "model 3",
+                "model 4",
+                "model 5",
+                "model 6"
+            ]
+        },
+        {
+            "attribuut": "sparqlQuery",
+            "type": "input-textrea",
+            "verplicht": "required",
+            "label": "Query",
+            "waarde": "SELECT * \n WHERE \n { \n  GRAPH <urn:name:kennisgebiedenregister> { \n ?subject ?predicate ?object \n } \n } \n",
+            "buttons": {
+                "querytest": "/query/actie/querytest"
+            }
+        },
+        {
+            "attribuut": "Naam",
+            "type": "input-text",
+            "verplicht": "required",
+            "label": "Naam",
+            "waarde": "Hier komt de naam van de query"
+        },
+        {
+            "attribuut": "beschrijving",
+            "type": "input-text",
+            "verplicht": "required",
+            "label": "Beschrijving",
+            "waarde": "Beschrijving van de query"
+        },
+        {
+            "attribuut": "modeltype",
+            "type": "select",
+            "label": "Modeltype",
+            "waarde": "SBM",
+            "opties": [
+                "SBM",
+                "CIM",
+                "xxx"
+            ]
+        }
+    ]
+}
